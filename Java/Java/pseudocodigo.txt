@@ -1,0 +1,7 @@
+Pseudo Código Java
+
+1. distanciaPercorrida = obterInformaçaoDoUsuario();
+2. preçoCombustivel = obterInformaçaoDoUsuario();
+3. consumoCarro = obterInformaçaoDoUsuario();
+4. consumoTotal = distanciaPercorrida / consumoCarro;
+5. custoTotal = consumoTotal * preçoCombustivel;

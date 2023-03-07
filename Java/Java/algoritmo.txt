@@ -1,0 +1,8 @@
+Algoritmo Java
+
+1°: Usuário definir a distância percorrida na viagem
+2°: Usuário definir o valor do combustível por litro
+3°: Usuário definir quanto o carro consume por quilômetro
+4°: Divir o consumo por quilômetro pela distância
+5°: Multiplicar o resultado do item 4 pelo preço do combustível
+6°: Mostre o gasto total da viagem
