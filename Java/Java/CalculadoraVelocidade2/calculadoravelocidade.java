@@ -1,4 +1,4 @@
-package Java.CalculadoraVelocidade2;
+package CalculadoraVelocidade2;
 
 import java.util.Scanner;
 

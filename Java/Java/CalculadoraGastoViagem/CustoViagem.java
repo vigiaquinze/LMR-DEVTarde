@@ -1,4 +1,4 @@
-package Java.CalculadoraGastoViagem;
+package CalculadoraGastoViagem;
 
 public class CustoViagem {
     public static void main(String[] args) {

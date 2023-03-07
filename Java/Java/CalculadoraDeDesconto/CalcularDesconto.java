@@ -1,4 +1,4 @@
-package Java.CalculadoraDeDesconto;
+package CalculadoraDeDesconto;
 
 public class CalcularDesconto {
     

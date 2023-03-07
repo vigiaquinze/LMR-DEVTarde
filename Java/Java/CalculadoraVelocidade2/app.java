@@ -1,4 +1,4 @@
-package Java.CalculadoraVelocidade2;
+package CalculadoraVelocidade2;
 
 public class app {
     public static void main(String[] args) {

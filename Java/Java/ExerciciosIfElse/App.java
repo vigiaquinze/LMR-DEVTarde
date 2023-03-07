@@ -3,12 +3,13 @@ package ExerciciosIfElse;
 public class App {
 
     public static void main(String[] args) {
-        Exercicios exerc1 = new Exercicios();
-        Exercicios exerc2 = new Exercicios();
-        Exercicios exerc3 = new Exercicios();
-        Exercicios exerc4 = new Exercicios();
-        Exercicios exerc5 = new Exercicios();
-        Exercicios exerc6 = new Exercicios();
+        Exercicios objeto1 = new Exercicios();
+        objeto1.exerc1();
+        objeto1.exerc2();
+        objeto1.exerc3();
+        objeto1.exerc4();
+        objeto1.exerc5();
+        objeto1.exerc6();
     }
 }
 
