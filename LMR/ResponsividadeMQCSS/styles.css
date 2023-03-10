@@ -4,18 +4,34 @@
     padding:60px;
     margin: 0 auto;
     display: table;
-    box-shadow: -1px -2px 5px 13px rgba(9, 76, 78, 0.75);
+    box-shadow: -1px -1px 8px 6px rgba(180, 180, 180, 0.75);
 }
 .banner img{
-    width:30%;
+    width:400px;
     height:400px;
     float:right;
 }
 .banner .texto{
-    margin-top:50%;
-    width:50%;
+    margin-top:0%;
+    margin-bottom: 35%;
+    width:60%;
     font-size:22px;
-}
+    font-family: 'Georama', sans-serif;}
+.banner .texto p {color:#6F58C9;}    
+.banner .texto a {background-color: rgba(230, 230, 230, 0.75); padding:3px 10px; text-decoration:none; border-radius:8px;}
 @media screen and (max-width: 998px) {
     .banner {height:480px; padding: 0px 20px}
+    .banner img {margin-top: 10%; width:80px; height:80px;}
+    .banner .texto {font-size:24px;}
+    .banner h1 {font-size:28px;}
+    .banner p {font-size:14px;}
+    .banner a {padding:3px 10px; background-color:rgba(230, 230, 230, 0.75); text-decoration:none; border-radius:10px; color:#6F58C9;}
+}
+@media screen and (max-width: 768px) {
+    .banner {padding: 0px 20px 20px}
+    .banner img {margin-top: 10%; width:80px; height:80px;}
+    .banner .texto {font-size:24px;}
+    .banner h1 {font-size:20px;}
+    .banner p {font-size:8px;}
+    .banner a {padding:3px 10px; background-color:rgba(230, 230, 230, 0.75); text-decoration:none; border-radius:10px; color:#6F58C9;}
 }
