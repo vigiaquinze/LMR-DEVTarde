@@ -3,8 +3,8 @@ body {background-color:#00AFB9; margin:0;}
 #home-logo {float:left; margin:10px 10px; width:80px}
 #nav-wrapper .links {float:right; margin-top:22px; margin-right:8px; position:right;}
 .links a {padding:20px; text-decoration:none; font-size:22px; color:#ffffff; font-family: 'Unbounded', sans-serif; font-weight: bold;}
-.banner {margin:40px auto; display:table; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.25); box-shadow: -1px -1px 8px 6px rgba(0, 0, 0, 0.05); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
-.lista-banner {margin:40px auto; display:table; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.25); box-shadow: -1px -1px 8px 6px rgba(0, 0, 0, 0.05); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
+.banner {margin:10px auto; display:table; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.5); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
+.lista-banner {margin:10px auto; display:table; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.5); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
 .lista-banner a {position:center; padding:10px; font-size: 23px; text-decoration:none; font-family: 'Unbounded', sans-serif; font-weight: lighter; color: #ffffff;}
-.lista-banner img {width:80px; border-radius:17px; margin-left:5px; margin-right:5px;}
+.lista-banner img {width:40px; border-radius:17px; margin-left:5px; margin-right:5px;}
 .lista-banner ul {margin-bottom:30px;}
