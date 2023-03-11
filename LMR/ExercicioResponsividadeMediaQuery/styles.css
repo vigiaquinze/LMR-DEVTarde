@@ -3,8 +3,29 @@ body {background-color:#00AFB9; margin:0;}
 #home-logo {float:left; margin:10px 10px; width:80px}
 #nav-wrapper .links {float:right; margin-top:22px; margin-right:8px; position:right;}
 .links a {padding:20px; text-decoration:none; font-size:22px; color:#ffffff; font-family: 'Unbounded', sans-serif; font-weight: bold;}
-.banner {margin:10px auto; display:table; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.5); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
-.lista-banner {margin:10px auto; display:table; height:1366px; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.5); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
-.lista-banner a {position:center; padding:10px; font-size: 50px; text-decoration:none; font-family: 'Unbounded', sans-serif; font-weight: lighter; color: #ffffff;}
-.lista-banner img {width:40px; border-radius:17px; margin-left:5px; margin-right:5px;}
+.banner {border-radius:20px; margin:10px auto; display:table; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.3); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
+.lista-banner {border-radius:20px; margin:10px auto; display:table; height:1366px; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.3); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
+.lista-banner a {background-color: rgba(0, 0, 0, 0.2); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.1); border-radius:8px; position:center; padding:10px; font-size: 25px; text-decoration:none; font-family: 'Unbounded', sans-serif; font-weight: lighter; color: #ffffff;}
+.lista-banner img {width:25px; border-radius:17px; margin-left:5px; margin-right:5px;}
 .lista-banner ul {margin-bottom:60px;}
+.audio {width:100px; height:25px}
+@media only screen and (max-width:998px) {
+#home-logo {width:40px;}
+.links a {font-size:12px;}
+.banner {border-radius:8px; margin:5px auto; width:75%; font-size:11px;}
+.lista-banner {border-radius:8px; height:auto; margin:0px auto; width:75%}
+.lista-banner a {border-radius:2px; padding:4px; font-size:11px}
+.lista-banner img {display:none}
+.lista-banner ul {margin-bottom:0px; margin-left:0px;}
+.audio {width:100px; height:10px}
+}
+@media only screen and (max-width:600px) {
+    #home-logo {width:40px;}
+    .links a {display:none; font-size:0px}
+    #nav-wrapper .links {display:none; font-size:0px}
+    .banner {border-radius:8px; margin:5px auto; width:75%; font-size:7px;}
+    .lista-banner {border-radius:8px; height:auto; margin:0px auto; width:75%}
+    .lista-banner a {border-radius:2px; padding:4px; font-size:7px}
+    .lista-banner img {display:none}
+    .lista-banner ul {margin-bottom:0px; margin-left:0px;}
+    }
