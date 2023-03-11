@@ -23,9 +23,9 @@ body {background-color:#00AFB9; margin:0;}
     #home-logo {width:40px;}
     .links a {display:none; font-size:0px}
     #nav-wrapper .links {display:none; font-size:0px}
-    .banner {padding:2px; border-radius:8px; margin:5px auto; width:75%; font-size:7px;}
+    .banner {padding:2px; border-radius:8px; margin:8px auto; width:75%; font-size:7px;}
     .banner h1 {padding:1px; margin-left:12px}
-    .lista-banner {padding:2px; border-radius:8px; height:auto; margin:0px auto; width:75%}
+    .lista-banner {padding:8px; border-radius:8px; height:300px; margin-bottom:30px; width:72.5%}
     .lista-banner a {border-radius:2px; padding:4px; font-size:7px}
     .lista-banner img {display:none}
     .lista-banner ul {margin-bottom:0px; margin-left:0px;}
