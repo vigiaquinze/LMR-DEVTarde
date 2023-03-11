@@ -6,7 +6,7 @@ body {background-color:#00AFB9; margin:0;}
 .banner {border-radius:20px; margin:10px auto; display:table; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.3); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
 .lista-banner {border-radius:20px; margin:10px auto; display:table; height:1366px; width:90%; padding:20px; background-color: rgba(0, 0, 0, 0.3); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Unbounded', sans-serif; font-weight: bold; color: #ffffff;}
 .lista-banner a {background-color: rgba(0, 0, 0, 0.2); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.1); border-radius:8px; position:center; padding:10px; font-size: 25px; text-decoration:none; font-family: 'Unbounded', sans-serif; font-weight: lighter; color: #ffffff;}
-.lista-banner img {width:25px; border-radius:17px; margin-left:5px; margin-right:5px;}
+.lista-banner img {width:25px; border-radius:50px; margin-left:5px; margin-right:5px;}
 .lista-banner ul {margin-bottom:60px;}
 .audio {width:100px; height:25px; box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.1);}
 @media only screen and (max-width:998px) {
