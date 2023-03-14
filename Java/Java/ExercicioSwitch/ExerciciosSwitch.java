@@ -48,7 +48,7 @@ public class ExerciciosSwitch {
             break;
             case 2: mesNome="Fevereiro";
             break;
-            case 3:mesNome="Março";
+            case 3: mesNome="Março";
             break;
             case 4: mesNome="Abril";
             break;
