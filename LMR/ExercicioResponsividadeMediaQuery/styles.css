@@ -3,8 +3,9 @@ body {background-color:#00AFB9; margin:0;}
 #home-logo {float:left; margin:10px 10px; width:40px}
 #nav-wrapper .links {float:right; margin-top:22px; margin-right:8px;}
 .links a {padding:20px; text-decoration:none; font-size:18px; color:#ffffff; font-family: 'Alexandria', sans-serif; font-weight: bold;}
-.banner {border-radius:20px; margin:10px auto; display:table; width:75%; padding:10px; background-color: rgba(0, 0, 0, 0.3); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Alexandria', sans-serif; font-weight: bold; color: #ffffff;}
-.lista-banner {border-radius:20px; margin:10px auto; display:table; height:1366px; width:75%; padding:10px; background-color: rgba(0, 0, 0, 0.3); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Alexandria', sans-serif; font-weight: bold; color: #ffffff;}
+.banner {margin:10px auto; display:table; padding:2px; border-radius:28px; width:75%; background-color: rgba(0, 0, 0, 0.3); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25);}
+.banner h1 {font-size:32px; padding:10px; font-family: 'Alexandria', sans-serif; font-weight: bold; color: #ffffff;}
+.lista-banner {border-radius:20px; margin:10px auto; display:table; height:1366px; width:75%; padding:0px; background-color: rgba(0, 0, 0, 0.3); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.25); font-family: 'Alexandria', sans-serif; font-weight: bold; color: #ffffff;}
 .lista-banner a {background-color: rgba(0, 0, 0, 0.2); box-shadow: -1px -1px 10px 3px rgba(0, 0, 0, 0.1); border-radius:8px; position:center; padding:10px; font-size: 25px; text-decoration:none; font-family: 'Alexandria', sans-serif; font-weight: lighter; color: #ffffff;}
 .lista-banner img {width:25px; border-radius:50px; margin-left:5px; margin-right:5px;}
 .lista-banner ul {margin-bottom:60px;}
@@ -13,8 +14,9 @@ body {background-color:#00AFB9; margin:0;}
 @media only screen and (max-width:998px) {
 #home-logo {width:40px;}
 .links a {font-size:12px;}
-.banner {border-radius:8px; margin:5px auto; width:75%; font-size:11px;}
-.lista-banner {border-radius:8px; height:auto; margin:0px auto; width:75%}
+.banner {padding:2px; border-radius:8px; margin:8px auto; width:75%;}
+.banner h1 {padding:1px; margin-left:12px; font-size:12px;}
+.lista-banner {border-radius:8px; height:400px; margin:0px auto; width:75%}
 .lista-banner a {border-radius:2px; padding:4px; font-size:11px}
 .lista-banner img {display:none}
 .lista-banner ul {margin-bottom:0px; margin-left:0px;}
@@ -26,7 +28,7 @@ body {background-color:#00AFB9; margin:0;}
     #nav.wrapper {display:flex;}
     #nav-wrapper .links {display:none; font-size:0px}
     .banner {padding:2px; border-radius:8px; margin:8px auto; width:75%; font-size:7px;}
-    .banner h1 {padding:1px; margin-left:12px}
+    .banner h1 {padding:1px; font-size:7px; margin-left:12px}
     .lista-banner {padding:8px; border-radius:8px; height:300px; margin-bottom:30px; width:72.5%}
     .lista-banner a {border-radius:2px; padding:4px; font-size:7px}
     .lista-banner img {display:none}
