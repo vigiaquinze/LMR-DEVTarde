@@ -12,7 +12,7 @@ public class ExemploRevisao {
         System.out.println("Informe a segunda nota do aluno:");
         int segundaNota = scan.nextInt();
         //3º: Calcular a média das duas notas do aluno.
-        double notaMedia = (primeiraNota+segundaNota)/2;
+        int notaMedia = (primeiraNota+segundaNota)/2;
         //4º: Mostrar a média do aluno.
         System.out.println("A média do aluno é: "+notaMedia);
         //5º: Ler o total de aulas da disciplina.
