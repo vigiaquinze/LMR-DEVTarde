@@ -26,8 +26,8 @@ public class ExemploRevisao {
         //8º: Mostrar a porcentagem de frequência.
         System.out.println("A porcentagem de frequência do aluno é: "+porcentagemFrequencia+"%");
         //9º: Se média for igual ou maior que 50 e a frequência maior ou igual a 75, então mostre: "Aluno aprovado".
-        //9º²: Se média for inferior a 50 e a frequência inferior a 75, então mostre: "Aluno reprovado".
         if (notaMedia>=50&&porcentagemFrequencia>=75){System.out.println("O aluno está aprovado.");}
+        //9º²: Se média for inferior a 50 e a frequência inferior a 75, então mostre: "Aluno reprovado".
         else {System.out.println("O aluno está reprovado.");}
     }
 }
