@@ -1,0 +1,12 @@
+Exemplo 1:
+Calcular a nota (duas notas) e a frequência (total de aulas e faltas) de um aluno.
+1º: Ler a 1ª nota do aluno.
+2º: Ler a 2ª nota do aluno.
+3º: Calcular a média das duas notas do aluno.
+4º: Mostrar a média do aluno.
+5º: Ler o total de aulas da disciplina.
+6º: Ler o total de faltas do aluno.
+7º: Calcular a porcentagem de frequência.
+8º: Mostrar a porcentagem de frequência.
+9º: Se média for igual ou maior que 50 e a frequência maior ou igual a 75, então mostre: "Aluno aprovado".
+9º²: Se média for inferior a 50 e a frequência inferior a 75, então mostre: "Aluno reprovado".
