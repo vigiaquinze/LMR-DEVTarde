@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="stylescadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;500;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <body id="corpo">
+        <div class="nav">
+            <img src="img/logo1.png" alt="Logo">
+            <div class="menu">
+                <a href="index.html" class="linkMenu">Início</a>
+                <a href="cadastro.html" class="linkMenu">Cadastro</a>
+                <a href="login.html" class="linkMenu">Login</a>
+            </div>
+            <img src="img/burgermenu.ico" alt="Menu" class="burgermenu">
+        </div>
+        <h1>Faça seu cadastro:</h1>
+        <hr>
+        <img src="img/login.svg" id="imgLogin">
+        <form action="">
+        <div class="areaLogin">
+            <label for="1nome" class="label">Digite seu nome completo:</label>
+            <input type="text" name="1nome" class="input" placeholder="Nome completo">
+            <label for="1cpf" class="label">Digite seu CPF com pontuação:</label>
+            <input type="text" name="1cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-10" class="input">
+            <label for="1telefone" class="label">Digite seu número de telefone:</label>
+            <input type="text" name="1cpf" pattern="(\d{3}\) \d{5}\-\d{4}" placeholder="(01) 23456-7891" class="input">
+            <label for="1email" class="label">Digite seu e-mail:</label>
+            <input type="email" name="1email" class="input" placeholder="E-mail">
+            <label for="1senha" class="label">Digite sua senha:</label>
+            <input type="password" name="1senha" class="input" placeholder="Senha">
+            <br>
+            <input type="submit" value="Enviar" class="button">
+        </div>
+        </form>
+    </body>
+</body>
+
+</html>
