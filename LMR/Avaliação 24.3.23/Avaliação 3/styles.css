@@ -1,0 +1,18 @@
+body {margin:0px; background-color: #FFF1FA;}
+.navBar {display:flex; align-items: center; justify-content:space-between; background-color: #32292F;}
+#navBarImg {display:flex; justify-content: flex-start; margin-left:10px; width:100px}
+.cadastroLogin a {display:flex; float:right; align-items: center; color:#FFD2F1; padding:10px; margin-right:10px; text-decoration: none; font-size:18px; font-family: 'Inter Tight', sans-serif; font-weight: bolder;}
+.navBar2 {display:flex; align-items: center; justify-content: center; background-color: #A5869C; flex-direction: row;}
+.navBar2 a {display:flex; float:right; align-items: center; color:#32292F; padding:10px 30px 10px 30px; margin-right:10px; text-decoration: none; font-size:18px; font-family: 'Inter Tight', sans-serif; font-weight: bolder;}
+.searchDiv {margin-bottom:10px; background-color: #FFFFFF; display:flex; float: left; width:100%; height:90px; align-items: center;}
+.searchDiv img {margin-left: 20px;}
+.searchDiv input {margin-left:20px; background-color:#ffffff; border-style:solid; border-color: #d4d4d4; border-radius: 20px; font-family: 'Inter Tight', sans-serif; font-weight: bolder; color: #32292F; padding:8px}
+.container {margin:auto; display:flex; flex-direction: column; margin-top:10px; margin-bottom:40px; width:90%; background-color:#A5869C; border-radius:20px; box-shadow: 0px 0px 12px -8px;}
+.container h1 {margin-left:10px; padding:10px}
+.container h2 {margin-left:10px; padding:10px}
+.container p {margin-left:10px; padding:10px}
+.container img {margin: auto; margin-bottom: 40px; border-radius:10px; width: 80%}
+h1 {font-size:42px; font-family: 'Inter Tight', sans-serif; font-weight: bolder; color:#32292F}
+h2 {font-size:22px; font-family: 'Inter Tight', sans-serif; font-weight: normal; color:#32292F}
+p {font-size:14px; font-family: 'Inter Tight', sans-serif; font-weight: normal; color:#32292F}
+hr {width:80%; color:#A5869C;}
