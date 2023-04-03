@@ -2,7 +2,7 @@ package AulaRevisaoVetores;
 
 import java.util.Scanner;
 
-public class Exercicio {
+public class ExercicioVetores {
     Scanner scan = new Scanner(System.in);
     public void revisaoExercicio() {
         double vetorDouble[] = new double[10];

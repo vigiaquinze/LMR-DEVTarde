@@ -4,7 +4,7 @@ public class App {
 
     
     public static void main(String[] args) {
-        Exercicio obj1 = new Exercicio();
-        obj1.revisaoExercicio();
+        ExercicioVetores objeto1 = new ExercicioVetores();
+        objeto1.revisaoExercicio();
     }
 }
