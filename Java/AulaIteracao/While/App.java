@@ -1,4 +1,4 @@
-package AulaIteracao;
+package AulaIteracao.While;
 
 public class App {
     public static void main(String[] args) {

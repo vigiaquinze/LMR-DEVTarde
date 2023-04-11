@@ -1,4 +1,4 @@
-package AulaIteracao;
+package AulaIteracao.While;
 
 import java.util.Random;
 import java.util.Scanner;
