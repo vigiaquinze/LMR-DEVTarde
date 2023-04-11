@@ -17,7 +17,7 @@ public class IteracaoWhile {
     }
     public void exemplo3() {
         Random rd = new Random();
-        int nAleatorio = rd.nextInt(bound=10)+1;
+        int nAleatorio = rd.nextInt(10)+1;
         boolean tenteNovamente = true;
         while(tenteNovamente){System.out.println("Digite um número de um a dez: ");int nDigitado=scan.nextInt();if(nDigitado==nAleatorio){System.out.println("Você acertou!"); tenteNovamente = false;} else {System.out.println("Você errou! Tente novamente.");}}
     }
