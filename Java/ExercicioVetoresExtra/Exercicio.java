@@ -12,6 +12,11 @@ public class Exercicio {
         vetorB[3] = vetorA[3];
         vetorB[4] = vetorA[4];
         System.out.println("Exercício 1 \n O valor do vetor A de índice 0 é "+vetorA[0]+" e o valor do vetor B de índice 0 é "+vetorB[0]);
+        System.out.println("O valor do vetor A de índice 1 é "+vetorA[1]+" e o valor do vetor B de índice 1 é "+vetorB[1]);
+        System.out.println("O valor do vetor A de índice 2 é "+vetorA[2]+" e o valor do vetor B de índice 2 é "+vetorB[2]);
+        System.out.println("O valor do vetor A de índice 3 é "+vetorA[3]+" e o valor do vetor B de índice 3 é "+vetorB[3]);
+        System.out.println("O valor do vetor A de índice 4 é "+vetorA[4]+" e o valor do vetor B de índice 4 é "+vetorB[4]);
+        System.out.println("O valor do vetor A de índice 5 é "+vetorA[5]+" e o valor do vetor B de índice 5 é "+vetorB[5]);
     }
     public void exercicio2() {
         int vetorA[] = new int []{1,2,3,4,5,6,7,8};
