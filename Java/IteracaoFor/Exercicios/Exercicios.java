@@ -8,16 +8,17 @@ public class Exercicios {
         System.out.println("Exercício 1");
         System.out.println("");
         int nDigitado[] = new int[5];
-        System.out.println("Digite o primeiro número");
-        nDigitado[0]=scan.nextInt();
-        System.out.println("Digite o segundo número");
-        nDigitado[1]=scan.nextInt();
-        System.out.println("Digite o terceiro número");
-        nDigitado[2]=scan.nextInt();
-        System.out.println("Digite o quarto número");
-        nDigitado[3]=scan.nextInt();
-        System.out.println("Digite o quinto número");
-        nDigitado[4]=scan.nextInt();
-        for(int i=0;i<nDigitado.length;i++){System.out.println("Número "+nDigitado[i]);}
+        for(int i=0;i<nDigitado.length;i++){System.out.println("Vetor["+i+"]="); nDigitado[i]=scan.nextInt();}
+        System.out.println("");
+        for(int i=0;i<nDigitado.length;i++){System.out.println("Vetor["+i+"]="+nDigitado[i]);}
+    }
+    public void exercicio2() {
+        System.out.println("");
+        System.out.println("Exercício 2");
+        System.out.println("");
+        double nDigitado[] = new double[10];
+        for(int i=0;i<nDigitado.length;i++){System.out.println("Vetor["+i+"]="); nDigitado[i]=scan.nextInt();}
+        System.out.println("");
+        for(int i = nDigitado.length-1;i>=0;i--){System.out.println("Vetor["+i+"]="+nDigitado[i]);}
     }
 }
