@@ -7,4 +7,10 @@ public class ExemploFor {
     public void exemplo1() {
         for(int i=0;i<10;i++){System.out.println("O número da iteração é "+i);}
     }
+    public void exemplo2() {
+        double carrinhoCompra[]=new double[]{25.50,55.90,69.90,95.75};
+        double valorFinalCompra = 0;
+        for(int i=0;i<carrinhoCompra.length;i++){valorFinalCompra+=carrinhoCompra[i]; System.out.println("Valor parcial: R$"+valorFinalCompra);}
+        System.out.println("Valor final: R$"+valorFinalCompra);
+    }
 }
