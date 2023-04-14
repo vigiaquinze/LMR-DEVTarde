@@ -6,7 +6,7 @@ body {background-image: url("img/pattern-background.jpeg"); margin:0; height:100
 .links a {padding:20px; text-decoration:none; text-transform:uppercase; font-size:18px; color:#ffffff; font-family: 'Alexandria', sans-serif; font-weight: bold;}
 .banner {transition:0.6s; margin:10px auto; display:table; padding:2px; border-radius:28px; width:75%; background-color: rgba(0, 0, 0, 0.2); border-style: solid;border-color: rgba(0, 0, 0, 0.259);border-width: 1px;}
 .banner h1 {text-transform:uppercase; font-size:32px; padding:12px; margin:auto; font-family: 'Alexandria', sans-serif; font-weight: bold; color: #ffffff;}
-.lista-banner {transition:0.6s; padding:6px; border-radius:20px; margin:10px auto; display:table; height:1366px; width:75%; padding:0px; background-color: rgba(0, 0, 0, 0.2); border-style: solid;border-color: rgba(0, 0, 0, 0.259);border-width: 1px; font-family: 'Alexandria', sans-serif; font-weight: bold; color: #ffffff;}
+.lista-banner {transition:0.6s; padding:6px; border-radius:20px; margin:10px auto; display:table; height:500px; width:75%; padding:0px; background-color: rgba(0, 0, 0, 0.2); border-style: solid;border-color: rgba(0, 0, 0, 0.259);border-width: 1px; font-family: 'Alexandria', sans-serif; font-weight: bold; color: #ffffff;}
 .lista-banner a {padding:12px; position:center; font-size: 25px; text-decoration:none; font-family: 'Alexandria', sans-serif; font-weight: lighter; color: #ffffff; transition:0.8s}
 .lista-banner a:hover {opacity:50%}
 .lista-banner img {width:25px; height:auto; border-radius:50px; margin-left:5px; margin-right:5px; transition:0.6s}
