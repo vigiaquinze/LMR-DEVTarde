@@ -3,7 +3,7 @@ body {background-image: url("img/pattern-background.jpeg"); margin:0; height:100
 #home-logo {float:left; margin:10px 10px; width:40px; height:auto}
 #nav-wrapper .links {float:right; margin-top:22px; margin-right:8px; opacity:50%; transition:0.6s}
 #nav-wrapper .links:hover {opacity:100%}
-.links a {padding:20px; text-decoration:none; text-transform:uppercase; font-size:18px; color:#ffffff; font-family: 'Alexandria', sans-serif; font-weight: bold;}
+.links a {padding:20px; text-decoration:none; text-transform:uppercase; font-size:18px; color:#ffffff; font-family: 'Alexandria', sans-serif; font-weight: bold; transition:0.6s}
 .banner {transition:0.6s; margin:10px auto; display:table; padding:2px; border-radius:28px; width:75%; background-color: rgba(0, 0, 0, 0.2); border-style: solid;border-color: rgba(0, 0, 0, 0.259);border-width: 1px;}
 .banner h1 {text-transform:uppercase; font-size:32px; padding:12px; margin:auto; font-family: 'Alexandria', sans-serif; font-weight: bold; color: #ffffff;}
 .lista-banner {transition:0.6s; padding:6px; border-radius:20px; margin:10px auto; display:table; height:500px; width:75%; padding:0px; background-color: rgba(0, 0, 0, 0.2); border-style: solid;border-color: rgba(0, 0, 0, 0.259);border-width: 1px; font-family: 'Alexandria', sans-serif; font-weight: bold; color: #ffffff;}
@@ -15,28 +15,31 @@ body {background-image: url("img/pattern-background.jpeg"); margin:0; height:100
 .audio {width:100px; height:25px;}
 #menuburger {display:none; float:right}
 hr {background-color:#00000033; margin-right: 22px; height:1px; border: none}
-.obterMais {margin-left: 20px}
+#obterMais {margin-left: 20px}
 @media only screen and (max-width:998px) {
 #home-logo {width:40px;}
-.links a {font-size:12px;}
+.links a {font-size:12px; transition:0.6s}
 .banner {padding:2px; border-radius:8px; margin:8px auto; width:75%;}
 .banner h1 {padding:1px; margin-left:12px; font-size:12px;}
 .lista-banner {border-radius:8px; height:400px; margin:0px auto; width:75%}
-.lista-banner a {border-radius:2px; padding:4px; font-size:11px}
-.lista-banner img {display:none}
+.lista-banner a {margin-left:-30px; border-radius:2px; padding:4px; font-size:11px}
+.lista-banner img {opacity:0%}
 .lista-banner ul {margin-bottom:0px; margin-left:22px;}
 .audio {width:100px; height:10px}
+#obterMais {margin-left: 20px}
 }
 @media only screen and (max-width:600px) {
     #home-logo {width:20px;}
-    .links a {display:none; font-size:0px}
+    .links a {font-size:0px;}
     #nav.wrapper {display:flex;}
     #nav-wrapper .links {display:none; font-size:0px}
     .banner {padding:8px; border-radius:8px; margin:8px auto; width:95%; font-size:7px;}
     .banner h1 {padding:1px; font-size:7px; margin-left:12px}
     .lista-banner {padding:8px; border-radius:8px; height:300px; margin-bottom:30px; width:95%}
-    .lista-banner a {border-radius:2px; padding:4px; font-size:7px}
+    .lista-banner a {margin-left:2px; border-radius:2px; padding:4px; font-size:7px}
     .lista-banner img {display:none}
     .lista-banner ul {margin-bottom:0px; margin-left:12px;}
-    #menuburger {display: flex; align-items:center; justify-content: end; float:right; width:20px; margin-top:9px; margin-right:9px}
+    #menuburger {display: flex; align-items:center; justify-content: end; float:right; width:20px; margin-top:9px; margin-right:9px; transition:0.6s}
+    #menuburger:hover {opacity:50%; cursor:pointer}
+    #obterMais {margin-left: 10px}
     }
