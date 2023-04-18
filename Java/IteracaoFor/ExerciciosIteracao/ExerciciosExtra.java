@@ -105,6 +105,14 @@ public class ExerciciosExtra {
         for (int i = 0; i <nImpar.length; i++) {
             System.out.println("Vetor ["+i+"] = "+nImpar[i]);
         }
+        }
+    public void exercicio5Gambiarra() {
+        System.out.println("");
+        System.out.println("Exercício 5 Gambiarra Edition™");
+        System.out.println("");
+        int vectorNumeros[]= new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+        int nPar[] = new int[vectorNumeros.length];
+        int nImpar[] = new int[vectorNumeros.length];
     }
     public void exercicio6() {
         System.out.println("");
