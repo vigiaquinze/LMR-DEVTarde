@@ -118,6 +118,46 @@ public class ExerciciosExtra {
         System.out.println("");
         System.out.println("Exercício 6");
         System.out.println("");
+        double alunosCadastrados[] = new double[4];
+        double mediasAlunos[] = new double[4];
+        double notasAluno1[] = new double[4];
+        for (int i = 0; i < notasAluno1.length; i++) {System.out.println("Nota "+(i+1)+" do 1° aluno: "); notasAluno1[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno1 = 0;
+        for (int i = 0; i < notasAluno1.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno1[i]); mediaAluno1+=notasAluno1[i];}
+        System.out.println("Média do 1° aluno: "+mediaAluno1/4);
+        System.out.println("");
+        double notasAluno2[] = new double[4];
+        for (int i = 0; i < notasAluno2.length; i++) {System.out.println("Nota "+(i+1)+" do 2° aluno: "); notasAluno2[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno2 = 0;
+        for (int i = 0; i < notasAluno2.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno2[i]); mediaAluno2+=notasAluno2[i];}
+        System.out.println("Média do 2° aluno: "+mediaAluno2/4);
+        System.out.println("");
+        double notasAluno3[] = new double[4];
+        for (int i = 0; i < notasAluno3.length; i++) {System.out.println("Nota "+(i+1)+" do 3° aluno: "); notasAluno3[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno3 = 0;
+        for (int i = 0; i < notasAluno3.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno3[i]); mediaAluno3+=notasAluno3[i];}
+        System.out.println("Média do 3° aluno: "+mediaAluno3/4);
+        System.out.println("");
+        double notasAluno4[] = new double[4];
+        for (int i = 0; i < notasAluno4.length; i++) {System.out.println("Nota "+(i+1)+" do 4° aluno: "); notasAluno4[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno4 = 0;
+        for (int i = 0; i < notasAluno4.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno4[i]); mediaAluno4+=notasAluno4[i];}
+        System.out.println("Média do 4° aluno: "+mediaAluno4/4);
+        System.out.println("");
+        mediaAluno1=(mediaAluno1/4);
+        mediaAluno2=(mediaAluno2/4);
+        mediaAluno3=(mediaAluno3/4);
+        mediaAluno4=(mediaAluno4/4);
+        mediasAlunos[0] = (mediaAluno1);
+        mediasAlunos[1] = (mediaAluno2);
+        mediasAlunos[2] = (mediaAluno3);
+        mediasAlunos[3] = (mediaAluno4);
+        System.out.println("Alunos aprovados:");
+        for (int i = 0; i < alunosCadastrados.length; i++) {if (mediasAlunos[i]>=7.0){System.out.println("Aluno "+(i+1)+"\nMédia: "+mediasAlunos[i]);}}
     }
     public void exercicio7() {
         System.out.println("");
