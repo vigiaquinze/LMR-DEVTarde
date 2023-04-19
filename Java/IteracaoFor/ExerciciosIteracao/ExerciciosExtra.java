@@ -163,6 +163,11 @@ public class ExerciciosExtra {
         System.out.println("");
         System.out.println("Exercício 7");
         System.out.println("");
+        int numerosOperacao[]=new int[]{2,3,4,5,6};
+        System.out.println("Soma: "+(numerosOperacao[0]+numerosOperacao[1]+numerosOperacao[2]+numerosOperacao[3]+numerosOperacao[4]));
+        System.out.println("Multiplicação: "+(numerosOperacao[0]*numerosOperacao[1]*numerosOperacao[2]*numerosOperacao[3]*numerosOperacao[4]));
+        System.out.println("Números:");
+        for (int i = 0; i < numerosOperacao.length; i++) {System.out.println(+numerosOperacao[i]);}
     }
     public void exercicio8() {
         System.out.println("");
