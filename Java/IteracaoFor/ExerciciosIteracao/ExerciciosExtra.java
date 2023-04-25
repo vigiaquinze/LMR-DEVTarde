@@ -173,10 +173,20 @@ public class ExerciciosExtra {
         System.out.println("");
         System.out.println("Exercício 8");
         System.out.println("");
+        int pessoasInseridas[]=new int[5];
+        double alturasInseridas[]=new double[5];
+        int pesosInseridos[]=new int [5];
+        for (int i = 0; i < pessoasInseridas.length; i++) {System.out.println("Pessoa "+(i+1));System.out.println("Insira a altura: ");alturasInseridas[i]=scan.nextDouble();System.out.println("");System.out.println("Insira o peso: ");pesosInseridos[i]=scan.nextInt();System.out.println("");}
+        System.out.println("=============================================================================");
+        System.out.println("");
+        System.out.println("Pessoa 1:\nAltura: "+alturasInseridas[0]+"\nPeso: "+pesosInseridos[0]+"\n\nPessoa 2:\nAltura: "+alturasInseridas[1]+"\nPeso: "+pesosInseridos[1]+"\n\nPessoa 3:\nAltura: "+alturasInseridas[2]+"\nPeso: "+pesosInseridos[2]+"\n\nPessoa 4:\nAltura: "+alturasInseridas[3]+"\nPeso: "+pesosInseridos[3]+"\n\nPessoa 5:\nAltura: "+alturasInseridas[4]+"\nPeso: "+pesosInseridos[4]);
     }
     public void exercicio9() {
         System.out.println("");
         System.out.println("Exercício 9");
         System.out.println("");
+        int vetorA[]=new int[]{2,4,6,8,10,12,14,16,18,20};
+        for (int i = 0; i < vetorA.length; i++) {System.out.println("Número "+vetorA[(i+1)]+": "+(vetorA[i]*vetorA[i]));}
+
     }
 }
