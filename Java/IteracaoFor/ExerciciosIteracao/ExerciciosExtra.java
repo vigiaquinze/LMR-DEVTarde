@@ -106,20 +106,12 @@ public class ExerciciosExtra {
             System.out.println("Vetor ["+i+"] = "+nImpar[i]);
         }
         }
-    public void exercicio5Gambiarra() {
-        System.out.println("");
-        System.out.println("Exercício 5 Gambiarra Edition™");
-        System.out.println("");
-        int vectorNumeros[]= new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-        int nPar[] = new int[vectorNumeros.length];
-        int nImpar[] = new int[vectorNumeros.length];
-    }
     public void exercicio6() {
         System.out.println("");
         System.out.println("Exercício 6");
         System.out.println("");
-        double alunosCadastrados[] = new double[4];
-        double mediasAlunos[] = new double[4];
+        double alunosCadastrados[] = new double[10];
+        double mediasAlunos[] = new double[10];
         double notasAluno1[] = new double[4];
         for (int i = 0; i < notasAluno1.length; i++) {System.out.println("Nota "+(i+1)+" do 1° aluno: "); notasAluno1[i] = scan.nextInt();}
         System.out.println("");
@@ -148,16 +140,89 @@ public class ExerciciosExtra {
         for (int i = 0; i < notasAluno4.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno4[i]); mediaAluno4+=notasAluno4[i];}
         System.out.println("Média do 4° aluno: "+mediaAluno4/4);
         System.out.println("");
+        double notasAluno5[] = new double[4];
+        for (int i = 0; i < notasAluno5.length; i++) {System.out.println("Nota "+(i+1)+" do 5° aluno: "); notasAluno5[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno5 = 0;
+        for (int i = 0; i < notasAluno5.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno5[i]); mediaAluno5+=notasAluno5[i];}
+        System.out.println("Média do 5° aluno: "+mediaAluno5/4);
+        System.out.println("");
+        double notasAluno6[] = new double[4];
+        for (int i = 0; i < notasAluno6.length; i++) {System.out.println("Nota "+(i+1)+" do 6° aluno: "); notasAluno6[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno6 = 0;
+        for (int i = 0; i < notasAluno6.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno6[i]); mediaAluno6+=notasAluno6[i];}
+        System.out.println("Média do 6° aluno: "+mediaAluno6/4);
+        System.out.println("");
+        double notasAluno7[] = new double[4];
+        for (int i = 0; i < notasAluno7.length; i++) {System.out.println("Nota "+(i+1)+" do 7° aluno: "); notasAluno7[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno7 = 0;
+        for (int i = 0; i < notasAluno7.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno7[i]); mediaAluno7+=notasAluno7[i];}
+        System.out.println("Média do 7° aluno: "+mediaAluno7/4);
+        System.out.println("");
+        double notasAluno8[] = new double[4];
+        for (int i = 0; i < notasAluno8.length; i++) {System.out.println("Nota "+(i+1)+" do 8° aluno: "); notasAluno8[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno8 = 0;
+        for (int i = 0; i < notasAluno8.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno8[i]); mediaAluno8+=notasAluno8[i];}
+        System.out.println("Média do 8° aluno: "+mediaAluno8/4);
+        System.out.println("");
+        double notasAluno9[] = new double[4];
+        for (int i = 0; i < notasAluno9.length; i++) {System.out.println("Nota "+(i+1)+" do 9° aluno: "); notasAluno9[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno9 = 0;
+        for (int i = 0; i < notasAluno9.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno9[i]); mediaAluno9+=notasAluno9[i];}
+        System.out.println("Média do 9° aluno: "+mediaAluno9/4);
+        System.out.println("");
+        double notasAluno10[] = new double[4];
+        for (int i = 0; i < notasAluno10.length; i++) {System.out.println("Nota "+(i+1)+" do 10° aluno: "); notasAluno10[i] = scan.nextInt();}
+        System.out.println("");
+        double mediaAluno10 = 0;
+        for (int i = 0; i < notasAluno10.length; i++) {System.out.println("Nota "+(i+1)+": "+notasAluno10[i]); mediaAluno10+=notasAluno10[i];}
+        System.out.println("Média do 10° aluno: "+mediaAluno10/4);
+        System.out.println("");
         mediaAluno1=(mediaAluno1/4);
         mediaAluno2=(mediaAluno2/4);
         mediaAluno3=(mediaAluno3/4);
         mediaAluno4=(mediaAluno4/4);
+        mediaAluno5=(mediaAluno5/4);
+        mediaAluno6=(mediaAluno6/4);
+        mediaAluno7=(mediaAluno7/4);
+        mediaAluno8=(mediaAluno8/4);
+        mediaAluno9=(mediaAluno9/4);
+        mediaAluno10=(mediaAluno10/4);
         mediasAlunos[0] = (mediaAluno1);
         mediasAlunos[1] = (mediaAluno2);
         mediasAlunos[2] = (mediaAluno3);
         mediasAlunos[3] = (mediaAluno4);
+        mediasAlunos[4] = (mediaAluno5);
+        mediasAlunos[5] = (mediaAluno6);
+        mediasAlunos[6] = (mediaAluno7);
+        mediasAlunos[7] = (mediaAluno8);
+        mediasAlunos[8] = (mediaAluno9);
+        mediasAlunos[9] = (mediaAluno10);
         System.out.println("Alunos aprovados:");
         for (int i = 0; i < alunosCadastrados.length; i++) {if (mediasAlunos[i]>=7.0){System.out.println("Aluno "+(i+1)+"\nMédia: "+mediasAlunos[i]);}}
+    }
+    public void exercicio6correcao() {
+        double mediasAlunos[]=new double[10];
+        double notasAlunos[]=new double[4];
+        int cont = 0;
+        for (int i = 0; i < mediasAlunos.length; i++) {
+            for (int j = 0; j < notasAlunos.length; j++) {
+                System.out.println("Informe a nota "+(j+1)+" do aluno "+(i+1)+": ");
+                notasAlunos[j]=scan.nextDouble();
+                mediasAlunos[i]+=notasAlunos[j];
+            }
+            mediasAlunos[i]/=notasAlunos.length;
+            if (mediasAlunos[i]>=7){cont++;}
+        }
+        for (int i = 0; i < mediasAlunos.length; i++) {
+            System.out.println("A média do aluno "+(i+1)+" é: "+mediasAlunos[i]);
+        }
+        System.out.println("O número de alunos aprovados é: "+cont);
+
     }
     public void exercicio7() {
         System.out.println("");
