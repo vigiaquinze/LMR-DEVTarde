@@ -1,0 +1,10 @@
+body {background-color: #000000; margin:0px}
+.carousel-inner {width:50vh; height:60vh; margin:auto}
+.carousel-item {width:50vh;}
+#carouselExample {width:70vh;margin:auto}
+footer {color:#FFFFFF}
+span {color:#FFFFFF}
+.row {margin:auto}
+h1 {display:flex; justify-content: center; margin:auto; color:#FFFFFF}
+.card {width:15rem}
+label {color:#FFFFFF}
