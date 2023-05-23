@@ -19,7 +19,7 @@ public class Exercicios {
         int matrizLC[][] = new int[linhas][colunas];
         for (int i = 0; i < matrizLinhas.length; i++) {
             for (int j = 0; j < matrizColunas.length; j++) {
-                matrizLC[i][j] = rndm.nextInt(9);
+                matrizLC[i][j] = rndm.nextInt(10);
             }
         }
         System.out.println(" ");
