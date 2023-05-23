@@ -77,14 +77,14 @@ public class Exercicios {
     public void exercicio3() {
         System.out.println("Exercício 3:");
         System.out.println(" ");
-        int matriz [] = new int [rndm.nextInt(1,10)];
+        int matriz [] = new int [rndm.nextInt(100,1000)];
         int cont = 0;
         int contImpar = 0;
         int contPar = 0;
         int contImparPar = 0;
         int contParImpar = 0;
         for (int i = 0; i < matriz.length; i++) {
-            matriz[i] = rndm.nextInt(1,100);
+            matriz[i] = rndm.nextInt(10,100);
         }
         for (int i = 0; i < matriz.length; i++) {
             cont++;
@@ -106,10 +106,10 @@ public class Exercicios {
         for (int i = 0; i < matriz.length; i++) {
             if (matriz[i]%2>0){contImpar++;};
         }
-        for (int i = 0; i < matriz.length; i++) {
+        for (int i = 1; i < matriz.length; i++) {
             if (matriz[i]%2==0&&(i+1)%2>0){contParImpar++;};
         }
-        for (int i = 0; i < matriz.length; i++) {
+        for (int i = 1; i < matriz.length; i++) {
             if (matriz[i]%2>0&&(i+1)%2==0){contImparPar++;};
         }
         System.out.println(" ");
