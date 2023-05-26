@@ -1,9 +1,10 @@
 body {
     margin:0px auto;
     background-color: #000;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 footer {color:#FFFFFF}
 span {color:#FFFFFF}
-h1 {color:#FFFFFF}
+h1 {font-family: 'Hanken Grotesk', sans-serif;color:#FFFFFF;font-weight: 700;}
 label {color:#FFFFFF}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Evento</title>
+    <title>Cadastro de Participante</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,11 +27,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="CadastroEvento.html">Cadastro de
+                        <a class="nav-link" aria-current="page" href="CadastroEvento.html">Cadastro de
                             Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="CadastroParticipantes.html">Cadastro de Participantes</a>
+                        <a class="nav-link active" href="CadastroParticipantes.html">Cadastro de Participantes</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -43,45 +43,43 @@
     </nav>
     <div class="row justify-content-center" data-bs-theme="dark">
         <div class="col-6" data-bs-theme="dark">
-            <h1>Cadastro de evento</h1>
+            <h1>Cadastro de participante</h1>
             <div class="mb-3" data-bs-theme="dark">
-                <label for="exampleFormControlInput1" class="form-label">Nome do evento</label>
-                <input type="text" class="form-control" placeholder="Nome do evento" id="nomeEvento">
+                <label for="exampleFormControlInput1" class="form-label">Nome completo:</label>
+                <input type="text" class="form-control" placeholder="Nome completo" id="nomeParticipante">
             </div>
             <div class="mb-3" data-bs-theme="dark">
-                <label for="exampleFormControlInput1" class="form-label">Data do evento</label>
-                <input type="date" class="form-control" placeholder="Data do evento" id="dataEvento">
+                <label for="exampleFormControlInput1" class="form-label">Data de nascimento:</label>
+                <input type="date" class="form-control" id="dataNascimentoParticipante">
             </div>
             <div class="mb-3" data-bs-theme="dark">
-                <label for="exampleFormControlInput1" class="form-label">Número de participantes</label>
-                <input type="number" class="form-control" placeholder="Número de participantes"
-                    id="numeroParticipantes">
+                <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" placeholder="E-mail"
+                    id="emailParticipante">
             </div>
             <div class="mb-3" data-bs-theme="dark">
-                <label for="exampleFormControlInput1" class="form-label">Nome do palestrante do evento</label>
-                <input type="text" class="form-control" placeholder="Nome do palestrante" id="nomePalestrante">
+                <label for="exampleFormControlInput1" class="form-label">Senha:</label>
+                <input type="password" class="form-control" placeholder="Senha" id="senhaParticipante">
             </div>
             <div class="mb-3" data-bs-theme="dark">
-                <input type="submit" class="form-control" value="Criar evento" onclick="cadastroEvento1()">
+                <input type="submit" class="form-control" value="Criar conta" onclick="cadastroParticipante1()">
             </div>
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="card" style="width: 18rem; justify-content: center; display: none;" id="cardEvento1"
+        <div class="card" style="width: 18rem; justify-content: center; display: none;" id="cardParticipante1"
             data-bs-theme="dark">
-            <img src="https://www.moblee.com.br/blog/wp-content/uploads/sites/2/2020/08/Como-preparar-um-excelente-site-para-um-evento-online.jpg"
-                class="card-img-top" alt="Foto do evento">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/800px-Default_pfp.svg.png"
+                class="card-img-top" alt="Foto do participante">
             <div class="card-body" style="justify-content: center;">
-                <h2 class="card-title" id="nomeEventoDigitado" style="text-transform: uppercase;"></h2>
+                <h2 class="card-title" id="nomeParticipanteDigitado" style="text-transform: uppercase;"></h2>
                 <hr>
-                <h5 class="card-title">Palestrante: </h5>
-                <p class="card-title" id="nomePalestranteDigitado" style="font-weight: 900;"></p>
+                <h5 class="card-title">Data de nascimento: </h5>
+                <p class="card-title" id="dataNascimentoParticipanteDigitado" style="font-weight: 900;"></p>
                 <hr>
-                <h5 class="card-text">Participantes:</h5>
-                <p class="card-text" id="numeroParticipantesDigitado" style="font-weight: 900;"></p>
-                <hr>
-                <p class="card-text" id="dataEventoDigitado"></p>
-                <a href="#" class="btn btn-primary" style="justify-content: center;">Mais informações</a>
+                <h5 class="card-text">E-mail:</h5>
+                <p class="card-text" id="emailParticipanteDigitado" style="font-weight: 900;"></p>
+                <a href="#" class="btn btn-primary" style="justify-content: center;">Mudar informações</a>
             </div>
         </div>
     </div>
@@ -100,6 +98,6 @@
     </div>
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="scriptCadastroEvento.js"></script>
+<script src="scriptCadastroParticipantes.js"></script>
 
 </html>
