@@ -34,8 +34,7 @@ function cadastroEvento1() {
         }
         
         let card = `
-        <div class="card" style="width: 28rem; justify-content: center; margin:20px;" id="cardEvento1"
-        data-bs-theme="dark">
+        <div class="card" style="width: 28rem; justify-content: center; margin:20px; display:block;" id="cardEvento1" data-bs-theme="dark">
         <img src="${preview.src}" width="20rem" height="320px" style="object-fit:cover;""
             class="card-img-top" alt="Foto do evento">
                 <div class="card-body" style="justify-content: center;">
