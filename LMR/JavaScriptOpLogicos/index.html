@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos de JavaScript</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h2>Descubra se o número é par ou ímpar:</h2>
+    <label for="nDigitado">Digite o número aqui:</label>
+    <br>
+    <input type="number" name="nDigitado" id="nDigitado">
+    <br>
+    <input type="button" value="Verificar" onclick="nParImpar()">
+    <br>
+    <hr>
+    <br>
+    <h2>Operadores lógicos:</h2>
+    <label for="numeroUm">Digite o primeiro número</label>
+    <input type="number" name="numeroUm" id="numeroUm">
+    <br>
+    <select name="opLogicos" id="opLogicos">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+    </select>
+    <br>
+    <label for="numeroDois">Digite o segundo número</label>
+    <input type="number" name="numeroDois" id="numeroDois">
+    <br>
+    <input type="submit" value="Calcular" onclick="calculoSwitch()">
+</body>
+
+</html>
