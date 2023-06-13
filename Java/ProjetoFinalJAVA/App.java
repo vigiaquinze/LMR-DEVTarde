@@ -37,13 +37,61 @@ public class App {
                     acaoEscolhida2 = scan.nextInt();
                     switch (acaoEscolhida2) {
                         case 1:
-                        appBanco.entrarContaFisica();
-                        break;
+                            appBanco.entrarContaFisica();
+                            boolean acoesContaPf = true;
+                            while (acoesContaPf) {
+                                System.out.println(
+                                        "Agora escolha o que deseja fazer:\n1 - Verificar saldo\n2 - Saque\n3 - Depósito\n4 - Empréstimo\n5 - Sair");
+                                int acoesContaFisica = scan.nextInt();
+                                switch (acoesContaFisica) {
+                                    case 1:
+                                        appBanco.saldoContaFisica();
+                                        break;
+                                    case 2:
+                                        appBanco.saqueContaPf(scan.nextInt());
+                                        break;
+                                    case 3:
+                                        appBanco.depositoContaPf(scan.nextInt());
+                                        break;
+                                    case 4:
+                                        appBanco.pedirEmprestimoPf(scan.nextInt());
+                                        break;
+                                    case 5:
+                                        acoesContaPf = false;
+                                    default:
+                                        System.out.println("Erro: Selecione uma das opções apresentadas");
+                                }
+                            }
+                            break;
                         case 2:
-                        appBanco.entrarContaJuridica();
-                        break;
+                            appBanco.entrarContaJuridica();
+                            boolean acoesContaPj = true;
+                            while (acoesContaPj) {
+                                System.out.println(
+                                    "Agora escolha o que deseja fazer:\n1 - Verificar saldo\n2 - Saque\n3 - Depósito\n4 - Empréstimo\n5 - Sair");
+                            int acoesContaJuridica = scan.nextInt();
+                            switch (acoesContaJuridica) {
+                                case 1:
+                                    appBanco.saldoContaJuridica();
+                                    break;
+                                case 2:
+                                    appBanco.saqueContaPj(scan.nextInt());
+                                    break;
+                                case 3:
+                                    appBanco.depositoContaPj(scan.nextInt());
+                                    break;
+                                case 4:
+                                    appBanco.pedirEmprestimoPj(scan.nextInt());
+                                    break;
+                                case 5:
+                                    acoesContaPj = false;
+                                default:
+                                    System.out.println("Erro: Selecione uma das opções apresentadas");
+                            }
+                            }
+                            break;
                         default:
-                        System.out.println("Erro: Digite um número dentre as opções apresentadas.");
+                            System.out.println("Erro: Digite um número dentre as opções apresentadas.");
                     }
                     break;
                 default:
@@ -51,12 +99,12 @@ public class App {
             }
             if (criandoContaFisica == true && criandoContaJuridica == false) {
                 appBanco.criarContaFisica();
-                appBanco.imprimirContaFisica();
-            }
-            else if (criandoContaJuridica == true && criandoContaFisica == false) {
+            } else if (criandoContaJuridica == true && criandoContaFisica == false) {
                 appBanco.criarContaJuridica();
-                appBanco.imprimirContaJuridica();
-            };
+            }
         }
+    }
+
+    public App() {
     }
 }

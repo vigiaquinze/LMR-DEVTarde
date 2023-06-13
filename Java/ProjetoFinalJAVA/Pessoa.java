@@ -7,6 +7,7 @@ public class Pessoa {
     String uf;
     String telefone;
     String email;
+    int nConta;
     public String getNome() {
         return nome;
     }
@@ -43,4 +44,11 @@ public class Pessoa {
     public void setEmail(String email) {
         this.email = email;
     }
+    public int getnConta() {
+        return nConta;
+    }
+    public void setnConta(int nConta) {
+        this.nConta = nConta;
+    }
+    
 }
