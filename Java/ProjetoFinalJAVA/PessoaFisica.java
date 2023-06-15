@@ -17,9 +17,12 @@ public class PessoaFisica extends Pessoa{
         this.dataNascimento = dataNascimento;
     }
     public int getSaldoContaFisica() {
-        return saldoContaFisica;
+        return 1;
     }
     public void setSaldoContaFisica(int saldoContaFisica) {
+        this.saldoContaFisica = saldoContaFisica;
+    }
+    public PessoaFisica(int saldoContaFisica) {
         this.saldoContaFisica = saldoContaFisica;
     }
     

@@ -4,15 +4,76 @@ import java.util.Scanner;
 
 public class Banco {
     public Banco() {
+        contaJuridica1[0].setSaldoContaJuridica(1);
+        contaFisica1[0].setSaldoContaFisica(1);
+        contaJuridica1[1].setSaldoContaJuridica(1);
+        contaFisica1[1].setSaldoContaFisica(1);
+        contaJuridica1[2].setSaldoContaJuridica(1);
+        contaFisica1[2].setSaldoContaFisica(1);
+        contaJuridica1[3].setSaldoContaJuridica(1);
+        contaFisica1[3].setSaldoContaFisica(1);
+        contaJuridica1[4].setSaldoContaJuridica(1);
+        contaFisica1[4].setSaldoContaFisica(1);
+        contaJuridica1[5].setSaldoContaJuridica(1);
+        contaFisica1[5].setSaldoContaFisica(1);
+        contaJuridica1[6].setSaldoContaJuridica(1);
+        contaFisica1[6].setSaldoContaFisica(1);
+        contaJuridica1[7].setSaldoContaJuridica(1);
+        contaFisica1[7].setSaldoContaFisica(1);
+        contaJuridica1[8].setSaldoContaJuridica(1);
+        contaFisica1[8].setSaldoContaFisica(1);
+        contaJuridica1[9].setSaldoContaJuridica(1);
+        contaFisica1[9].setSaldoContaFisica(1);
+        contaJuridica1[10].setSaldoContaJuridica(1);
+        contaFisica1[10].setSaldoContaFisica(1);
+        int saldoPf = contaFisica1[contPf].getSaldoContaFisica();
+        int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
+        int novoSaldoPf = saldoPf;
+        int novoSaldoPj = saldoPj;
     }
+
     Scanner scan = new Scanner(System.in);
     PessoaJuridica contaJuridica1[] = new PessoaJuridica[10];
     PessoaFisica contaFisica1[] = new PessoaFisica[10];
     int contPf = 0;
     int contPj = 0;
     int contaAtual = 0;
+
+    public void definirSaldo() {
+        contaJuridica1[0].setSaldoContaJuridica(1);
+        contaFisica1[0].setSaldoContaFisica(1);
+        contaJuridica1[1].setSaldoContaJuridica(1);
+        contaFisica1[1].setSaldoContaFisica(1);
+        contaJuridica1[2].setSaldoContaJuridica(1);
+        contaFisica1[2].setSaldoContaFisica(1);
+        contaJuridica1[3].setSaldoContaJuridica(1);
+        contaFisica1[3].setSaldoContaFisica(1);
+        contaJuridica1[4].setSaldoContaJuridica(1);
+        contaFisica1[4].setSaldoContaFisica(1);
+        contaJuridica1[5].setSaldoContaJuridica(1);
+        contaFisica1[5].setSaldoContaFisica(1);
+        contaJuridica1[6].setSaldoContaJuridica(1);
+        contaFisica1[6].setSaldoContaFisica(1);
+        contaJuridica1[7].setSaldoContaJuridica(1);
+        contaFisica1[7].setSaldoContaFisica(1);
+        contaJuridica1[8].setSaldoContaJuridica(1);
+        contaFisica1[8].setSaldoContaFisica(1);
+        contaJuridica1[9].setSaldoContaJuridica(1);
+        contaFisica1[9].setSaldoContaFisica(1);
+        contaJuridica1[10].setSaldoContaJuridica(1);
+        contaFisica1[10].setSaldoContaFisica(1);
+    }
+
+    
+    PessoaFisica pessoaFisica1 = new PessoaFisica(1);
+    PessoaJuridica pessoaJuridica1 = new PessoaJuridica(1);
+    pessoaFisica1.setSaldoContaFisica(0);
+    int saldoPf = contaFisica1[0].getSaldoContaFisica();
+    int saldoPj = contaJuridica1[0].getSaldoContaJuridica();
+    int novoSaldoPf = saldoPf;
+    int novoSaldoPj = saldoPj;
+
     public void criarContaJuridica() {
-        contaJuridica1[contPj] = new PessoaJuridica();
         System.out.println("Criação de conta jurídica");
         System.out.println("Digite seu nome:");
         contaJuridica1[contPj].setNome(scan.nextLine());
@@ -38,7 +99,7 @@ public class Banco {
     }
 
     public void criarContaFisica() {
-        contaFisica1[contPf] = new PessoaFisica();
+        contaFisica1[contPf] = pessoaFisica1;
         System.out.println("Criação de conta física");
         System.out.println("Digite seu nome:");
         contaFisica1[contPf].setNome(scan.nextLine());
@@ -62,7 +123,6 @@ public class Banco {
         contPf++;
     }
 
-
     public void entrarContaFisica() {
         boolean busca = true;
         int cont = 0;
@@ -74,8 +134,9 @@ public class Banco {
                 contaAtual = cont;
                 cont++;
                 busca = false;
+            } else {
+                System.out.println("CPF não encontrado");
             }
-            else {System.out.println("CPF não encontrado");}
         }
     }
 
@@ -90,84 +151,85 @@ public class Banco {
                 contaAtual = cont;
                 cont++;
                 busca = false;
+            } else {
+                System.out.println("CNPJ não encontrado");
             }
-            else {System.out.println("CNPJ não encontrado");}
         }
     }
 
-        public void saqueContaPj(int valorSaque) {
-            int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
-            valorSaque -= saldoPj;
-            System.out.print("Escolha qual o valor que deseja sacar:\nR$");
-            valorSaque = scan.nextInt();
-            if (valorSaque < saldoPj) {
-                System.out.println("Erro: Você está tentando sacar um valor acima do seu saldo da conta");
-            } else {
-                System.out.println("Novo saldo:\nR$" + (saldoPj-valorSaque));
-            }
-            ;
+    public void saqueContaPj() {
+        int valorSaque;
+        System.out.print("Escolha qual o valor que deseja sacar:\nR$");
+        valorSaque = scan.nextInt();
+        if (valorSaque > saldoPj) {
+            System.out.println("Erro: Você está tentando sacar um valor acima do seu saldo da conta");
+        } else {
+            novoSaldoPj = (valorSaque - saldoPj);
+            System.out.println("Novo saldo:\nR$" + novoSaldoPj);
         }
-        public void saqueContaPf(int valorSaque) {
-            int saldoPf = contaFisica1[contPj].getSaldoContaFisica();
-            valorSaque -= saldoPf;
-            System.out.print("Escolha qual o valor que deseja sacar:\nR$");
-            valorSaque = scan.nextInt();
-            if (valorSaque < saldoPf) {
-                System.out.println("Erro: Você está tentando sacar um valor acima do seu saldo da conta");
-            } else {
-                System.out.println("Novo saldo:\nR$" +(saldoPf-valorSaque));
-            }
-            ;
-        }
-
-        public void depositoContaPj(int valorDeposito) {
-            int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
-            valorDeposito += saldoPj;
-            System.out.print("Escolha qual o valor que deseja depositar:\nR$");
-            valorDeposito = scan.nextInt();
-            System.out.println("Novo saldo:\nR$" + saldoPj+valorDeposito);
-        }
-        public void depositoContaPf(int valorDeposito) {
-            int saldoPf = contaFisica1[contPj].getSaldoContaFisica();
-            valorDeposito += saldoPf;
-            System.out.print("Escolha qual o valor que deseja depositar:\nR$");
-            valorDeposito = scan.nextInt();
-            System.out.println("Novo saldo:\nR$" + saldoPf+valorDeposito);
-        }
-
-        public void pedirEmprestimoPj(int valorEmprestimo) {
-            int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
-            valorEmprestimo += saldoPj;
-            System.out.println("Qual o valor de empréstimo que deseja fazer?");
-            valorEmprestimo = scan.nextInt();
-            if (valorEmprestimo > 5000) {
-                System.out.println("Desculpe, não podemos aceitar empréstimos acima de R$5000");
-            } else {
-                System.out.println("Novo saldo: R$" + saldoPj);
-            }
-            ;
-        }
-        public void pedirEmprestimoPf(int valorEmprestimo) {
-            int saldoPf = contaFisica1[contPj].getSaldoContaFisica();
-            valorEmprestimo += saldoPf;
-            System.out.println("Qual o valor de empréstimo que deseja fazer?");
-            valorEmprestimo = scan.nextInt();
-            if (valorEmprestimo > 5000) {
-                System.out.println("Desculpe, não podemos aceitar empréstimos acima de R$5000");
-            } else {
-                System.out.println("Novo saldo: R$" + saldoPf);
-            }
-            ;
-        }
-        public void saldoContaFisica() {
-            int contPf = 0;
-            int saldoPf = contaFisica1[contPj].getSaldoContaFisica();
-            System.out.println("Saldo: R$" + saldoPf);
-        }
-
-        public void saldoContaJuridica() {
-            int contPj = 0;
-            int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
-            System.out.println("Saldo: R$" + saldoPj);
-        }
+        ;
     }
+
+    public void saqueContaPf() {
+        int valorSaque;
+        System.out.print("Escolha qual o valor que deseja sacar:\nR$");
+        valorSaque = scan.nextInt();
+        if (valorSaque > saldoPf) {
+            System.out.println("Erro: Você está tentando sacar um valor acima do seu saldo da conta");
+        } else {
+            novoSaldoPf = (valorSaque - saldoPf);
+            System.out.println("Novo saldo:\nR$" + novoSaldoPf);
+        }
+        ;
+    }
+
+    public void depositoContaPj() {
+        int valorDeposito;
+        System.out.print("Escolha qual o valor que deseja depositar:\nR$");
+        valorDeposito = scan.nextInt();
+        novoSaldoPj = (valorDeposito + saldoPj);
+        System.out.println("Novo saldo:\nR$" + novoSaldoPj);
+    }
+
+    public void depositoContaPf() {
+        int valorDeposito;
+        System.out.print("Escolha qual o valor que deseja depositar:\nR$");
+        valorDeposito = scan.nextInt();
+        novoSaldoPf = (valorDeposito + saldoPf);
+        System.out.println("Novo saldo:\nR$" + novoSaldoPf);
+    }
+
+    public void pedirEmprestimoPj() {
+        int valorEmprestimo;
+        System.out.println("Qual o valor de empréstimo que deseja fazer?");
+        valorEmprestimo = scan.nextInt();
+        if (valorEmprestimo > 5000) {
+            System.out.println("Desculpe, não podemos aceitar empréstimos acima de R$5000");
+        } else {
+            novoSaldoPj = (valorEmprestimo + saldoPj);
+            System.out.println("Novo saldo: R$" + novoSaldoPj);
+        }
+        ;
+    }
+
+    public void pedirEmprestimoPf() {
+        int valorEmprestimo;
+        System.out.println("Qual o valor de empréstimo que deseja fazer?");
+        valorEmprestimo = scan.nextInt();
+        if (valorEmprestimo > 5000) {
+            System.out.println("Desculpe, não podemos aceitar empréstimos acima de R$5000");
+        } else {
+            novoSaldoPf = (valorEmprestimo + saldoPf);
+            System.out.println("Novo saldo: R$" + novoSaldoPf);
+        }
+        ;
+    }
+
+    public void saldoContaFisica() {
+        System.out.print("Saldo:\nR$" + novoSaldoPf);
+    }
+
+    public void saldoContaJuridica() {
+        System.out.print("Saldo:\nR$" + novoSaldoPj);
+    }
+}

@@ -13,10 +13,14 @@ public class PessoaJuridica extends Pessoa{
     }
 
     public int getSaldoContaJuridica() {
-        return saldoContaJuridica;
+        return 1;
     }
 
     public void setSaldoContaJuridica(int saldoContaJuridica) {
+        this.saldoContaJuridica = saldoContaJuridica;
+    }
+
+    public PessoaJuridica(int saldoContaJuridica) {
         this.saldoContaJuridica = saldoContaJuridica;
     }
     

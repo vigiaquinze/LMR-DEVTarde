@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        PessoaFisica pessoaFisica1 = new PessoaFisica(1);
+        PessoaJuridica pessoaJuridica1 = new PessoaJuridica(1);
         Banco appBanco = new Banco();
+        appBanco.definirSaldo();
         boolean ligado = true;
         boolean criandoContaJuridica = false;
         boolean criandoContaFisica = false;
@@ -48,13 +51,13 @@ public class App {
                                         appBanco.saldoContaFisica();
                                         break;
                                     case 2:
-                                        appBanco.saqueContaPf(scan.nextInt());
+                                        appBanco.saqueContaPf();
                                         break;
                                     case 3:
-                                        appBanco.depositoContaPf(scan.nextInt());
+                                        appBanco.depositoContaPf();
                                         break;
                                     case 4:
-                                        appBanco.pedirEmprestimoPf(scan.nextInt());
+                                        appBanco.pedirEmprestimoPf();
                                         break;
                                     case 5:
                                         acoesContaPf = false;
@@ -75,13 +78,13 @@ public class App {
                                     appBanco.saldoContaJuridica();
                                     break;
                                 case 2:
-                                    appBanco.saqueContaPj(scan.nextInt());
+                                    appBanco.saqueContaPj();
                                     break;
                                 case 3:
-                                    appBanco.depositoContaPj(scan.nextInt());
+                                    appBanco.depositoContaPj();
                                     break;
                                 case 4:
-                                    appBanco.pedirEmprestimoPj(scan.nextInt());
+                                    appBanco.pedirEmprestimoPj();
                                     break;
                                 case 5:
                                     acoesContaPj = false;
