@@ -6,8 +6,37 @@ body {
 
 footer {color:#fff}
 span {color:#fff}
-h1 {font-family: 'Hanken Grotesk', sans-serif;color:#fff;font-weight: 700;}
+h1 {font-family: 'Hanken Grotesk', sans-serif;color:#fff;font-weight: 900;}
 label {color:#fff}
+hr {border-color: #fff;width: 80%;margin: 0px auto;}
+
+.card{
+    margin:10px;
+    padding:10px;
+}
+.card-body .btn{
+    display:block;
+    margin: 0px auto;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 0.375rem;
+}
+.carousel{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.carousel-center{
+    display: flex;
+    justify-content: center;
+}
+.d-block{
+    opacity:50%;
+}
+.row{
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+}
 
 .btn-outline-primary {
     --bs-btn-color: #f2723b;
