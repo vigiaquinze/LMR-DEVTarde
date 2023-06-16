@@ -77,10 +77,17 @@ public class Banco {
             String buscarCPF = scan.nextLine();
             if (buscarCPF.equals(contaFisica1[cont].getCpf())) {
                 contaAtual = cont;
-                cont++;
+                System.out.println("Dados da conta:");
+                System.out.println("Nome: " + contaFisica1[cont].getNome() + "\nCPF: " + contaFisica1[cont].getCpf()
+                        + "\nE-mail: " + contaFisica1[cont].getEmail() + "\nTelefone: "
+                        + contaFisica1[cont].getTelefone()
+                        + "\nCEP: " + contaFisica1[cont].getCep() + "\nMunicípio: "
+                        + contaFisica1[cont].getMunicipio()
+                        + "\nEstado: " + contaFisica1[cont].getUf());
                 busca = false;
             } else {
                 System.out.println("CPF não encontrado");
+                cont++;
             }
         }
     }
@@ -94,18 +101,25 @@ public class Banco {
             String buscarCNPJ = scan.nextLine();
             if (buscarCNPJ.equals(contaJuridica1[cont].getCnpj())) {
                 contaAtual = cont;
-                cont++;
+                System.out.println("Dados da conta:");
+                System.out.println(
+                        "Nome: " + contaJuridica1[cont].getNome() + "\nCNPJ: " + contaJuridica1[cont].getCnpj()
+                                + "\nE-mail: " + contaJuridica1[cont].getEmail() + "\nTelefone: "
+                                + contaJuridica1[cont].getTelefone()
+                                + "\nCEP: " + contaJuridica1[cont].getCep() + "\nMunicípio: "
+                                + contaJuridica1[cont].getMunicipio()
+                                + "\nEstado: " + contaJuridica1[cont].getUf());
                 busca = false;
             } else {
                 System.out.println("CNPJ não encontrado");
+                cont++;
             }
         }
     }
 
     public void saqueContaPj() {
-        int saldoPf = contaFisica1[contPf].getSaldoContaFisica();
+        int contPj=0;
         int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
-        int novoSaldoPf = saldoPf;
         int novoSaldoPj = saldoPj;
         int valorSaque;
         System.out.print("Escolha qual o valor que deseja sacar:\nR$");
@@ -120,10 +134,9 @@ public class Banco {
     }
 
     public void saqueContaPf() {
+        int contPf=0;
         int saldoPf = contaFisica1[contPf].getSaldoContaFisica();
-        int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
         int novoSaldoPf = saldoPf;
-        int novoSaldoPj = saldoPj;
         int valorSaque;
         System.out.print("Escolha qual o valor que deseja sacar:\nR$");
         valorSaque = scan.nextInt();
@@ -137,9 +150,8 @@ public class Banco {
     }
 
     public void depositoContaPj() {
-        int saldoPf = contaFisica1[contPf].getSaldoContaFisica();
+        int contPj=0;
         int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
-        int novoSaldoPf = saldoPf;
         int novoSaldoPj = saldoPj;
         int valorDeposito;
         System.out.print("Escolha qual o valor que deseja depositar:\nR$");
@@ -149,10 +161,9 @@ public class Banco {
     }
 
     public void depositoContaPf() {
+        int contPf=0;
         int saldoPf = contaFisica1[contPf].getSaldoContaFisica();
-        int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
         int novoSaldoPf = saldoPf;
-        int novoSaldoPj = saldoPj;
         int valorDeposito;
         System.out.print("Escolha qual o valor que deseja depositar:\nR$");
         valorDeposito = scan.nextInt();
@@ -161,9 +172,8 @@ public class Banco {
     }
 
     public void pedirEmprestimoPj() {
-        int saldoPf = contaFisica1[contPf].getSaldoContaFisica();
+        int contPj=0;
         int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
-        int novoSaldoPf = saldoPf;
         int novoSaldoPj = saldoPj;
         int valorEmprestimo;
         System.out.println("Qual o valor de empréstimo que deseja fazer?");
@@ -178,10 +188,9 @@ public class Banco {
     }
 
     public void pedirEmprestimoPf() {
+        int contPf=0;
         int saldoPf = contaFisica1[contPf].getSaldoContaFisica();
-        int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
         int novoSaldoPf = saldoPf;
-        int novoSaldoPj = saldoPj;
         int valorEmprestimo;
         System.out.println("Qual o valor de empréstimo que deseja fazer?");
         valorEmprestimo = scan.nextInt();
@@ -195,17 +204,15 @@ public class Banco {
     }
 
     public void saldoContaFisica() {
+        int contPf=0;
         int saldoPf = contaFisica1[contPf].getSaldoContaFisica();
-        int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
         int novoSaldoPf = saldoPf;
-        int novoSaldoPj = saldoPj;
         System.out.print("Saldo:\nR$" + novoSaldoPf);
     }
 
     public void saldoContaJuridica() {
-        int saldoPf = contaFisica1[contPf].getSaldoContaFisica();
+        int contPj=0;
         int saldoPj = contaJuridica1[contPj].getSaldoContaJuridica();
-        int novoSaldoPf = saldoPf;
         int novoSaldoPj = saldoPj;
         System.out.print("Saldo:\nR$" + novoSaldoPj);
     }
