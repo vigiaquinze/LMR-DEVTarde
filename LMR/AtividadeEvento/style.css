@@ -32,6 +32,7 @@ hr {border-color: #fff;width: 80%;margin: 0px auto;}
 }
 .d-block{
     opacity:50%;
+    border-radius: 20px;
 }
 .row{
     --bs-gutter-x: 0rem;

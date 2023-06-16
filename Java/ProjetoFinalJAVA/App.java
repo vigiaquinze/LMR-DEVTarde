@@ -8,7 +8,6 @@ public class App {
         PessoaFisica pessoaFisica1 = new PessoaFisica(1);
         PessoaJuridica pessoaJuridica1 = new PessoaJuridica(1);
         Banco appBanco = new Banco();
-        appBanco.definirSaldo();
         boolean ligado = true;
         boolean criandoContaJuridica = false;
         boolean criandoContaFisica = false;
