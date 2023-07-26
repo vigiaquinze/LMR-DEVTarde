@@ -1,15 +1,17 @@
 package RevisaoFPOO.Cadastro;
 
-public class Animais {
+import javax.swing.JOptionPane;
+
+public abstract class Animais {
     //Atributos
     String porte;
-    double peso;
+    String peso;
     String proprietario;
     String nome;
     String especie;
     //métodos
     //construtor cheio
-    public Animais(String porte, double peso, String proprietario, String nome, String especie) {
+    public Animais(String porte, String peso, String proprietario, String nome, String especie) {
         this.porte = porte;
         this.peso = peso;
         this.proprietario = proprietario;
@@ -26,10 +28,10 @@ public class Animais {
     public void setPorte(String porte) {
         this.porte = porte;
     }
-    public double getPeso() {
+    public String getPeso() {
         return peso;
     }
-    public void setPeso(double peso) {
+    public void setPeso(String peso) {
         this.peso = peso;
     }
     public String getProprietario() {
@@ -50,5 +52,4 @@ public class Animais {
     public void setEspecie(String especie) {
         this.especie = especie;
     }
-    
 }
