@@ -23,7 +23,9 @@ public class App {
             Aves cadastroAves[] = new Aves[10];
             Cachorros cadastroCachorros[] = new Cachorros[10];
             Gatos cadastroGatos[] = new Gatos[10];
-            int contCadastro = 0;
+            int contCadastroAves = 0;
+            int contCadastroCachorros = 0;
+            int contCadastroGatos = 0;
             while (cadastro) {
                 JOptionPane.showMessageDialog(null, "Siga na próxima tela para cadastrar seu animal",
                         "Cadastro de Animais", JOptionPane.INFORMATION_MESSAGE);
@@ -31,49 +33,46 @@ public class App {
                         "Escolha o tipo de animal que você deseja cadastrar:\n1 - Aves\n2 - Cachorros\n3 - Gatos",
                         "Escolha de animal", JOptionPane.INFORMATION_MESSAGE));
                 if (acaoEscolhida2 == 1) {
-                    cadastroAves[contCadastro] = new Aves();
-                    cadastroAves[contCadastro].setProprietario("Digite o nome do dono da ave:");
-                    cadastroAves[contCadastro].setNome(JOptionPane.showInputDialog("Digite o nome da ave:"));
-                    cadastroAves[contCadastro].setPorte(JOptionPane.showInputDialog("Digite o porte da ave:"));
-                    cadastroAves[contCadastro].setPeso(JOptionPane.showInputDialog("Digite o peso da ave:"));
-                    cadastroAves[contCadastro].setRaca(JOptionPane.showInputDialog("Digite a raça da ave:"));
-                    cadastroAves[contCadastro].setIdade(JOptionPane.showInputDialog("Digite a idade da ave:"));
-                    cadastroAves[contCadastro].setCor(JOptionPane.showInputDialog("Digite a cor da ave:"));
-                    JOptionPane.showMessageDialog(null, "Animal cadastrado!", "Cadastro de Animais",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    contCadastro++;
+                    cadastroAves[contCadastroAves] = new Aves();
+                    cadastroAves[contCadastroAves].setProprietario(JOptionPane.showInputDialog("Digite o nome do dono da ave:"));
+                    cadastroAves[contCadastroAves].setNome(JOptionPane.showInputDialog("Digite o nome da ave:"));
+                    cadastroAves[contCadastroAves].setPorte(JOptionPane.showInputDialog("Digite o porte da ave:"));
+                    cadastroAves[contCadastroAves].setPeso(JOptionPane.showInputDialog("Digite o peso da ave:"));
+                    cadastroAves[contCadastroAves].setRaca(JOptionPane.showInputDialog("Digite a raça da ave:"));
+                    cadastroAves[contCadastroAves].setIdade(JOptionPane.showInputDialog("Digite a idade da ave:"));
+                    cadastroAves[contCadastroAves].setCor(JOptionPane.showInputDialog("Digite a cor da ave:"));
+                    JOptionPane.showMessageDialog(null, "Animal cadastrado!", "Cadastro de Animais",JOptionPane.INFORMATION_MESSAGE);
+                    cadastroAves[contCadastroAves].imprimirAve();
+                    contCadastroAves++;
                     cadastro = false;
                 } else if (acaoEscolhida2 == 2) {
-                    cadastroCachorros[contCadastro] = new Cachorros();
-                    cadastroCachorros[contCadastro].setProprietario("Digite o nome do dono do cachorro:");
-                    cadastroCachorros[contCadastro].setNome(JOptionPane.showInputDialog("Digite o nome do cachorro:"));
-                    cadastroCachorros[contCadastro]
-                            .setPorte(JOptionPane.showInputDialog("Digite o porte do cachorro:"));
-                    cadastroCachorros[contCadastro].setPeso(JOptionPane.showInputDialog("Digite o peso do cachorro:"));
-                    cadastroCachorros[contCadastro].setRaca(JOptionPane.showInputDialog("Digite a raça do cachorro:"));
-                    cadastroCachorros[contCadastro]
-                            .setIdade(JOptionPane.showInputDialog("Digite a idade do cachorro:"));
-                    cadastroCachorros[contCadastro].setCor(JOptionPane.showInputDialog("Digite a cor do cachorro:"));
-                    JOptionPane.showMessageDialog(null, "Animal cadastrado!", "Cadastro de Animais",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    contCadastro++;
+                    cadastroCachorros[contCadastroCachorros] = new Cachorros();
+                    cadastroCachorros[contCadastroCachorros].setProprietario(JOptionPane.showInputDialog("Digite o nome do dono do cachorro:"));
+                    cadastroCachorros[contCadastroCachorros].setNome(JOptionPane.showInputDialog("Digite o nome do cachorro:"));
+                    cadastroCachorros[contCadastroCachorros].setPorte(JOptionPane.showInputDialog("Digite o porte do cachorro:"));
+                    cadastroCachorros[contCadastroCachorros].setPeso(JOptionPane.showInputDialog("Digite o peso do cachorro:"));
+                    cadastroCachorros[contCadastroCachorros].setRaca(JOptionPane.showInputDialog("Digite a raça do cachorro:"));
+                    cadastroCachorros[contCadastroCachorros].setIdade(JOptionPane.showInputDialog("Digite a idade do cachorro:"));
+                    cadastroCachorros[contCadastroCachorros].setCor(JOptionPane.showInputDialog("Digite a cor do cachorro:"));
+                    JOptionPane.showMessageDialog(null, "Animal cadastrado!", "Cadastro de Animais",JOptionPane.INFORMATION_MESSAGE);
+                    cadastroCachorros[contCadastroCachorros].imprimirCachorro();
+                    contCadastroCachorros++;
                     cadastro = false;
                 } else if (acaoEscolhida2 == 3) {
-                    cadastroGatos[contCadastro] = new Gatos();
-                    cadastroGatos[contCadastro].setProprietario("Digite o nome do dono do gato:");
-                    cadastroGatos[contCadastro].setNome(JOptionPane.showInputDialog("Digite o nome do gato:"));
-                    cadastroGatos[contCadastro].setPorte(JOptionPane.showInputDialog("Digite o porte do gato:"));
-                    cadastroGatos[contCadastro].setPeso(JOptionPane.showInputDialog("Digite o peso do gato:"));
-                    cadastroGatos[contCadastro].setRaca(JOptionPane.showInputDialog("Digite a raça do gato:"));
-                    cadastroGatos[contCadastro].setIdade(JOptionPane.showInputDialog("Digite a idade do gato:"));
-                    cadastroGatos[contCadastro].setCor(JOptionPane.showInputDialog("Digite a cor do gato:"));
-                    JOptionPane.showMessageDialog(null, "Animal cadastrado!", "Cadastro de Animais",
-                            JOptionPane.INFORMATION_MESSAGE);
-                    contCadastro++;
+                    cadastroGatos[contCadastroGatos] = new Gatos();
+                    cadastroGatos[contCadastroGatos].setProprietario(JOptionPane.showInputDialog("Digite o nome do dono do gato:"));
+                    cadastroGatos[contCadastroGatos].setNome(JOptionPane.showInputDialog("Digite o nome do gato:"));
+                    cadastroGatos[contCadastroGatos].setPorte(JOptionPane.showInputDialog("Digite o porte do gato:"));
+                    cadastroGatos[contCadastroGatos].setPeso(JOptionPane.showInputDialog("Digite o peso do gato:"));
+                    cadastroGatos[contCadastroGatos].setRaca(JOptionPane.showInputDialog("Digite a raça do gato:"));
+                    cadastroGatos[contCadastroGatos].setIdade(JOptionPane.showInputDialog("Digite a idade do gato:"));
+                    cadastroGatos[contCadastroGatos].setCor(JOptionPane.showInputDialog("Digite a cor do gato:"));
+                    JOptionPane.showMessageDialog(null, "Animal cadastrado!", "Cadastro de Animais",JOptionPane.INFORMATION_MESSAGE);
+                    cadastroGatos[contCadastroGatos].imprimirGato();
+                    contCadastroGatos++;
                     cadastro = false;
                 } else {
-                    JOptionPane.showMessageDialog(null, "Escolha um número dentre as opções apresentadas.", "Erro!",
-                            JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Escolha um número dentre as opções apresentadas.", "Erro!",JOptionPane.ERROR_MESSAGE);
                 }
                 ;
             }
@@ -81,40 +80,49 @@ public class App {
                 int acaoEscolhida3 = Integer.parseInt(JOptionPane.showInputDialog(
                         "Qual tipo de animal você deseja ver os dados?\n1 - Aves\n2 - Cachorros\n3 - Gatos"));
                 if (acaoEscolhida3 == 1) {
-                    String buscarNome = JOptionPane.showInputDialog(
-                            "Informe o nome a ser Buscado");
                     boolean busca = true;
-                    int cont = 0;
+                    int contAve = 0;
                     while (busca) {
-                        if (buscarNome.equals(cadastroAves[contCadastro].getNome())) {
-                            cadastroAves[cont].imprimirAve();                            
+                            String buscarNome = JOptionPane.showInputDialog(
+                            "Informe o nome a ser Buscado");
+                        if (buscarNome.equals(cadastroAves[contCadastroAves].getNome())) {
+                            contCadastroAves = contAve;
+                            cadastroAves[contCadastroAves].imprimirAve();
                             busca = false;
+                        } else {
+                            contAve++;
                         }
-                        else {cont++;};
+                        ;
                     }
                 } else if (acaoEscolhida3 == 2) {
-                    String buscarNome = JOptionPane.showInputDialog(
-                            "Informe o nome a ser Buscado");
                     boolean busca = true;
-                    int cont = 0;
+                    int contCachorros = 0;
                     while (busca) {
-                        if (buscarNome.equals(cadastroCachorros[contCadastro].getNome())) {
-                            cadastroCachorros[cont].imprimirCachorro();
+                            String buscarNome = JOptionPane.showInputDialog(
+                            "Informe o nome a ser Buscado");
+                            contCachorros = contCadastroCachorros;
+                        if (buscarNome.equals(cadastroCachorros[contCadastroCachorros].getNome())) {
+                            cadastroCachorros[contCadastroCachorros].imprimirCachorro();
                             busca = false;
+                        } else {
+                            contCachorros++;
                         }
-                        else {cont++;};
+                        ;
                     }
                 } else if (acaoEscolhida3 == 3) {
-                    String buscarNome = JOptionPane.showInputDialog(
-                            "Informe o nome a ser Buscado");
                     boolean busca = true;
-                    int cont = 0;
+                    int contGatos = 0;
                     while (busca) {
-                        if (buscarNome.equals(cadastroGatos[contCadastro].getNome())) {
-                            cadastroGatos[cont].imprimirGato();
+                        String buscarNome = JOptionPane.showInputDialog(
+                        "Informe o nome a ser Buscado");
+                        if (buscarNome.equals(cadastroGatos[contCadastroGatos].getNome())) {
+                            contCadastroGatos = contGatos;
+                            cadastroGatos[contCadastroGatos].imprimirGato();
                             busca = false;
+                        } else {
+                            contGatos++;
                         }
-                        else {cont++;};
+                        ;
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, "Escolha um número dentre as opções apresentadas.", "Erro!",
