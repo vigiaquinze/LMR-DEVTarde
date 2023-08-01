@@ -22,4 +22,7 @@ public class AgendaConsulta {
         public void setHorarioEscolhido(Object horarioEscolhido) {
             this.horarioEscolhido = horarioEscolhido;
         }
+        public AgendaConsulta() {
+        }
+        
 }
