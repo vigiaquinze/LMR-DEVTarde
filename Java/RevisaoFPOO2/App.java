@@ -24,7 +24,7 @@ public class App {
                     pessoasAgendadas[contAgendamentos].setCpf(JOptionPane.showInputDialog(null, "Digite seu CPF:"));
                     pessoasAgendadas[contAgendamentos].setHorarioEscolhido(JOptionPane.showInputDialog(null,"Escolha um horário abaixo:", "Agendando consulta",JOptionPane.INFORMATION_MESSAGE, null,horariosAgenda, horariosAgenda[0]));
                     JOptionPane.showMessageDialog(null, "Consulta agendada!");
-                    JOptionPane.showMessageDialog(null, "DADOS DE CONSULTA\nNome: "+pessoasAgendadas[contAgendamentos].getNomeCompleto()+"\nCPF: "+pessoasAgendadas[contAgendamentos].getCpf()+"\nHorário: "+pessoasAgendadas[contAgendamentos].getHorarioEscolhido());
+                    JOptionPane.showMessageDialog(null, "DADOS DE CONSULTA\n\nNome: "+pessoasAgendadas[contAgendamentos].getNomeCompleto()+"\nCPF: "+pessoasAgendadas[contAgendamentos].getCpf()+"\nHorário: "+pessoasAgendadas[contAgendamentos].getHorarioEscolhido());
                     contAgendamentos++;
                     agendando=false;
                 }
