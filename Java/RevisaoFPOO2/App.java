@@ -19,13 +19,20 @@ public class App {
             if (acaoEscolhida1 == 1) {
                 agendando = true;
                 while (agendando) {
-                    pessoasAgendadas[contAgendamentos].setNomeCompleto(JOptionPane.showInputDialog(null, "Digite seu nome:"));
+                    pessoasAgendadas[contAgendamentos]
+                            .setNomeCompleto(JOptionPane.showInputDialog(null, "Digite seu nome:"));
                     pessoasAgendadas[contAgendamentos].setCpf(JOptionPane.showInputDialog(null, "Digite seu CPF:"));
-                    pessoasAgendadas[contAgendamentos].setHorarioEscolhido(JOptionPane.showInputDialog(null,"Escolha um horário abaixo:", "Agendando consulta",JOptionPane.INFORMATION_MESSAGE, null,horariosAgenda, horariosAgenda[0]));
+                    pessoasAgendadas[contAgendamentos].setHorarioEscolhido(
+                            JOptionPane.showInputDialog(null, "Escolha um horário abaixo:", "Agendando consulta",
+                                    JOptionPane.INFORMATION_MESSAGE, null, horariosAgenda, horariosAgenda[0]));
                     JOptionPane.showMessageDialog(null, "Consulta agendada!");
-                    JOptionPane.showMessageDialog(null, "DADOS DE CONSULTA\n\nNome: "+pessoasAgendadas[contAgendamentos].getNomeCompleto()+"\nCPF: "+pessoasAgendadas[contAgendamentos].getCpf()+"\nHorário: "+pessoasAgendadas[contAgendamentos].getHorarioEscolhido());
+                    JOptionPane.showMessageDialog(null,
+                            "DADOS DE CONSULTA\n\nNome: " + pessoasAgendadas[contAgendamentos].getNomeCompleto()
+                                    + "\nCPF: " + pessoasAgendadas[contAgendamentos].getCpf() + "\nHorário: "
+                                    + pessoasAgendadas[contAgendamentos].getHorarioEscolhido());
                     contAgendamentos++;
-                    agendando=false;
+                    agendando = false;
+                    contAgendamentos++;
                 }
             } else if (acaoEscolhida1 == 2) {
                 consultando = true;
@@ -33,16 +40,30 @@ public class App {
                     boolean busca = true;
                     int contAgendamentos2 = 0;
                     while (busca) {
-                        System.out.println("Conferir dados de uma consulta agendada");
-                        JOptionPane.showMessageDialog(null, "Conferir dados de uma consulta agendada");
-                        String buscarCPF = JOptionPane.showInputDialog(null, "Digite seu CPF:");
-                        if (buscarCPF.equals(pessoasAgendadas[contAgendamentos2].getCpf())) {
-                            JOptionPane.showMessageDialog(null, "DADOS DE CONSULTA\nNome: "+pessoasAgendadas[contAgendamentos2].getNomeCompleto()+"\nCPF: "+pessoasAgendadas[contAgendamentos2].getCpf()+pessoasAgendadas[contAgendamentos2].getHorarioEscolhido());
+                        JOptionPane.showMessageDialog(null, +contAgendamentos);
+                        if (contAgendamentos != 0) {
+                            System.out.println("Conferir dados de uma consulta agendada");
+                            JOptionPane.showMessageDialog(null, "Conferir dados de uma consulta agendada");
+                            String buscarCPF = JOptionPane.showInputDialog(null, "Digite seu CPF:");
+                            for (int i = 0; i < contAgendamentos; i++) {
+                                if (buscarCPF.equals(pessoasAgendadas[contAgendamentos2].getCpf())) {
+                                    JOptionPane.showMessageDialog(null,
+                                            "DADOS DE CONSULTA\nNome: "
+                                                    + pessoasAgendadas[contAgendamentos2].getNomeCompleto() +
+                                                    "\nCPF: " + pessoasAgendadas[contAgendamentos2].getCpf() +
+                                                    "\nHorário: "
+                                                    + pessoasAgendadas[contAgendamentos2].getHorarioEscolhido());
+                                    busca = false;
+                                    consultando = false;
+                                } else {
+                                    JOptionPane.showMessageDialog(null, "CPF não encontrado!");
+                                    contAgendamentos2++;
+                                }
+                            }
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Nenhum horário foi cadastrado ainda.");
                             busca = false;
                             consultando = false;
-                        } else {
-                            JOptionPane.showMessageDialog(null, "CPF não encontrado!");
-                            contAgendamentos2++;
                         }
                     }
                 }
