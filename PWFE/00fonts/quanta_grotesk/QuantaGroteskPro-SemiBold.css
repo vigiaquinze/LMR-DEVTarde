@@ -1,0 +1,11 @@
+/* Webfont: QuantaGroteskPro-SemiBold */@font-face {
+    font-family: 'QuantaGroteskProSemBd';
+    src: url('QuantaGroteskPro-SemiBold.eot'); /* IE9 Compat Modes */
+    src: url('QuantaGroteskPro-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('QuantaGroteskPro-SemiBold.woff') format('woff'), /* Modern Browsers */
+         url('QuantaGroteskPro-SemiBold.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

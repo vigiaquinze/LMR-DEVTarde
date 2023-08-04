@@ -1,4 +1,10 @@
-
+@font-face {
+    font-family: 'TasaOrbit';
+    src:url("../fonts/TASAOrbiterVF.woff2") format('woff2');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
 
 :root, [data-bs-theme=light] {
     --bs-body-bg: #e0dde2; /*BACKGROUND COLOR*/
@@ -21,7 +27,8 @@
     --bs-primary-rgb: 43, 43, 43; /*PRIMARY COLOR IN RGB*/
     --bs-secondary-rgb: 248, 168, 37; /*SECONDARY COLOR IN RGB*/
     --bs-info-rgb: 37, 118, 212; /*TERTIARY COLOR IN RGB*/
-    --bs-font-sans-serif: 'Victor Mono', monospace; /*FONT*/
+    --bs-font-sans-serif: 'TasaOrbit'; /*FONT*/
+    --bs-border-color: #a7a6a8;
 }
 
 .navbar{

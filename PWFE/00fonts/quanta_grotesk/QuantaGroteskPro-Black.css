@@ -1,0 +1,11 @@
+/* Webfont: QuantaGroteskPro-Black */@font-face {
+    font-family: 'QuantaGroteskProBlack';
+    src: url('QuantaGroteskPro-Black.eot'); /* IE9 Compat Modes */
+    src: url('QuantaGroteskPro-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('QuantaGroteskPro-Black.woff') format('woff'), /* Modern Browsers */
+         url('QuantaGroteskPro-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

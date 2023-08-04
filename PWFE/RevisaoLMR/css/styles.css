@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'NohemiSemBd';
+    src: url(fonts/nohemi/Nohemi-SemiBold.eot);
+    /* IE9 Compat Modes */
+    src: url(fonts/nohemi/Nohemi-SemiBold.eot?#iefix) format('embedded-opentype'),
+        /* IE6-IE8 */
+        url(fonts/nohemi/Nohemi-SemiBold.woff) format('woff'),
+        /* Modern Browsers */
+        url(fonts/nohemi/Nohemi-SemiBold.woff2) format('woff2'),
+        /* Modern Browsers */
+        url(fonts/nohemi/Nohemi-SemiBold.ttf) format('truetype');
+    /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
 body {
     margin: 0px;
     transition: 1s;
@@ -34,6 +52,7 @@ header {
     text-decoration: none;
     padding: 10px 40px;
 }
+
 .linkMenuHb {
     color: #FFF;
     text-decoration: none;
@@ -61,20 +80,21 @@ header {
     align-items: center;
 }
 
+.disabled {
+    opacity:50%;
+}
+
 .carousel-inner {
     background: #000 !important;
     opacity: 100%;
-    width:75%;
 }
 
-.d-block, .w-100 img{
+.d-block,
+.w-100 img {
     opacity: 50% !important;
 }
 
 .carrossel {
-    display: flex;
-    justify-content: center !important;
-    align-items: center;
     margin: 0px auto;
 }
 
@@ -93,7 +113,7 @@ header {
         color: white;
     }
 
-    .hb img{
+    .hb img {
         display: flex;
         filter: invert();
         width: 60px;
@@ -106,16 +126,16 @@ header {
         display: flex;
     }
 
-    #menuMuda:checked ~ .menuHbLinks{
+    #menuMuda:checked~.menuHbLinks {
         padding: 0px;
         display: flex;
         transition: 0.6s;
         flex-direction: column;
-        padding:0px;
+        padding: 0px;
         background: #2b2b2b;
     }
 
-    #menuMuda ~ .menuHbLinks{
+    #menuMuda~.menuHbLinks {
         display: none;
     }
 }
