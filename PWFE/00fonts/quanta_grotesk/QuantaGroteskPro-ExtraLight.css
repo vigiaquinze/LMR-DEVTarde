@@ -1,0 +1,11 @@
+/* Webfont: QuantaGroteskPro-ExtraLight */@font-face {
+    font-family: 'QuantaGroteskProExtLt';
+    src: url('QuantaGroteskPro-ExtraLight.eot'); /* IE9 Compat Modes */
+    src: url('QuantaGroteskPro-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('QuantaGroteskPro-ExtraLight.woff') format('woff'), /* Modern Browsers */
+         url('QuantaGroteskPro-ExtraLight.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

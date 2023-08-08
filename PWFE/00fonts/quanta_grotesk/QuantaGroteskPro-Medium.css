@@ -1,0 +1,11 @@
+/* Webfont: QuantaGroteskPro-Medium */@font-face {
+    font-family: 'QuantaGroteskProMed';
+    src: url('QuantaGroteskPro-Medium.eot'); /* IE9 Compat Modes */
+    src: url('QuantaGroteskPro-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('QuantaGroteskPro-Medium.woff') format('woff'), /* Modern Browsers */
+         url('QuantaGroteskPro-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
