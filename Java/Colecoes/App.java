@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
-        ExemploArrayList obj1 = new ExemploArrayList();
-        obj1.teste();
+        ExercicioHashMap obj1 = new ExercicioHashMap();
+        obj1.exercicio1();
     }
 }
