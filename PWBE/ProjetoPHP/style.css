@@ -1,0 +1,16 @@
+html {
+	font-family: Verdana;
+}
+body {
+	font-family: Verdana;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.link {
+	background-color: #212121;
+	border-radius: 8px;
+	padding: 8px;
+	display: inline-block;
+}
