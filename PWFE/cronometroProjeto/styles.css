@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Schibsted Grotesk Regular";
+    src:
+        local("Schibsted Grotesk Regular"),
+        url("fonts/SchibstedGrotesk-Regular.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk Black";
+    src:
+        local("Schibsted Grotesk Black"),
+        url("fonts/SchibstedGrotesk-Black.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk Bold";
+    src:
+        local("Schibsted Grotesk Bold"),
+        url("fonts/SchibstedGrotesk-Bold.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk ExtraBold";
+    src:
+        local("Schibsted Grotesk ExtraBold"),
+        url("fonts/SchibstedGrotesk-ExtraBold.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk Medium";
+    src:
+        local("Schibsted Grotesk Medium"),
+        url("fonts/SchibstedGrotesk-Medium.woff2") format("woff2");
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Schibsted Grotesk SemiBold";
+    src:
+        local("Schibsted Grotesk SemiBold"),
+        url("fonts/SchibstedGrotesk-SemiBold.woff2") format("woff2");
+}
+
+body{
+    font-family: "Schibsted Grotesk Regular";
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 200px;
+}
+
+h1{
+    font-family: "Schibsted Grotesk Black";
+    line-height: 1px;
+}
+
+p{
+    font-family: "Schibsted Grotesk Regular";
+    line-height: 1px;
+}
+
+.cronometro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 30px 30px;
+}
+
+.horas{
+    text-align: center;
+    margin:30px 30px;
+}
+
+.horas h1{
+    font-size: 72px;
+}
+
+.minutos{
+    text-align: center;
+    margin:30px 30px;
+}
+
+.minutos h1{
+    font-size: 72px;
+}
+
+.segundos{
+    text-align: center;
+    margin:30px 30px;
+}
+
+.segundos h1{
+    font-size: 72px;
+}
+
+.separator h3{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 12px;
+    padding: 12px;
+}
+
+.botoes button{
+    border: none;
+    background-color: #00000085;
+    color: #FFF;
+    border-radius: 8px;
+    margin: 1px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botoes button:active{
+    border: none;
+    background-color: #000000c7;
+    color: #FFF;
+    transition: 0.5s;
+}
