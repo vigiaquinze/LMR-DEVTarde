@@ -82,7 +82,7 @@ body{
 }
 
 .animacaoBackground {
-    background: linear-gradient(-45deg, #ffffff, #c5e2f1, #8ec0e0, #74b0d6, #8ec0e0, #c5e2f1, #ffffff);
+    background: linear-gradient(-45deg, #050500, #1e2633, #2f476e, #004ec5);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -100,11 +100,20 @@ body{
       background-position: 0% 50%;
     }
   }
+  @keyframes title{
+    0%{
+        letter-spacing: 1px;
+    }
+    50%{
+        letter-spacing: 12px;
+        opacity: 0.8;
+    }
+  }
 
 .index-text{
     font-family: "Schibsted Grotesk Regular";
     display: flex;
-    color: #050500;
+    color: #ffffff;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -114,6 +123,8 @@ body{
 .index-text h1{
     font-size: 144px;
     font-family: "Tusker Grotesk 4700 Bold";
+    animation: title 3.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+    -webkit-box-reflect: below -90px linear-gradient(#ffffff00, #ffffff07, #ffffff17);
 }
 .index-text h5{
     font-size: 12px;
@@ -123,6 +134,12 @@ body{
     font-family: "Schibsted Grotesk Black";
     list-style-type: none;
     font-size: 32px;
+    color: #ffffff;
+    transition: 0.6s;
+}
+.index-text li:hover{
+    letter-spacing: 4px;
+    transition: 0.6s;
 }
 .projetosLinks{
     font-family: "Schibsted Grotesk Regular";
@@ -168,7 +185,7 @@ a{
     align-items: center;
     align-content: center;
     flex-direction: column;
-    background-color: #b1d4ea;
+    background-color: #d6dadd;
     scroll-behavior: smooth;
 }
 .projeto3{
@@ -205,16 +222,19 @@ a{
     scale: 1.4;
     letter-spacing: 3px;
     transition: 0.5s;
+    color: #004ec5;
 }
 .projeto2 a:hover{
     text-decoration: none;
     scale: 1.4;
     letter-spacing: 3px;
     transition: 0.5s;
+    color: #004ec5;
 }
 .projeto3 a:hover{
     text-decoration: none;
     scale: 1.4;
     letter-spacing: 3px;
     transition: 0.5s;
+    color: #004ec5;
 }
