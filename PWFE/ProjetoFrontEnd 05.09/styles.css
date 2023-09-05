@@ -122,6 +122,7 @@ body{
     align-content: center;
     flex-direction: column;
     scroll-behavior: smooth;
+    text-align: center;
 }
 .index-text h1{
     font-size: 220px;
@@ -261,6 +262,20 @@ a{
     border: 1px solid #0000003a;
 }
 
+.textoComplementar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textoComplementar h5{
+    margin: 1px 0px 1px 40px;
+    text-align: center;
+}
+
 @media screen and (max-width:1430px) {
     .index-text h1{
         font-size: 134px;
@@ -307,7 +322,6 @@ a{
     .index-text h5{
         font-family: "Schibsted Grotesk Medium";
         font-size: 8px;
-        margin: 0px auto;
     }
     .index-text li{
         font-size: 16px;
