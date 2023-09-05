@@ -80,7 +80,8 @@ body{
 .title p:hover{
     font-family: "Schibsted Grotesk Black";
     letter-spacing: 2px;
-    background-color: #00cda0;
+    color: #FFF;
+    background-color: #004ec5;
     border-radius: 20px;
     padding: 12px;
     transition: 0.5s;

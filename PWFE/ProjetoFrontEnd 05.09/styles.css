@@ -82,7 +82,7 @@ body{
 }
 
 .animacaoBackground {
-    background: linear-gradient(-45deg, #050500, #1e2633, #2f476e, #004ec5);
+    background: linear-gradient(-45deg, #004ec5, #2f476e, #1e2633, #050500);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -104,9 +104,12 @@ body{
     0%{
         letter-spacing: 1px;
     }
+    25%{
+        opacity: 0;
+    }
     50%{
         letter-spacing: 12px;
-        opacity: 0.8;
+        opacity: 1;
     }
   }
 
@@ -121,10 +124,13 @@ body{
     scroll-behavior: smooth;
 }
 .index-text h1{
-    font-size: 144px;
+    font-size: 220px;
     font-family: "Tusker Grotesk 4700 Bold";
     animation: title 3.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
-    -webkit-box-reflect: below -90px linear-gradient(#ffffff00, #ffffff07, #ffffff17);
+    -webkit-box-reflect: below -90px linear-gradient(#ffffff00, #ffffff07, #ffffff1e);
+    text-align: center;
+    margin: 50px 200px;
+    line-height: 1;
 }
 .index-text h5{
     font-size: 12px;
@@ -200,41 +206,170 @@ a{
     scroll-behavior: smooth;
 }
 .projeto1 a{
-    text-decoration: underline 2px #004ec5;
+    text-decoration: none;
     font-family: "Schibsted Grotesk Black";
-    color: #1e2633;
+    background-color: #004ec5;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 10px;
     transition: 0.5s;
 }
 .projeto2 a{
-    text-decoration: underline 2px #004ec5;
+    text-decoration: none;
     font-family: "Schibsted Grotesk Black";
-    color: #1e2633;
+    background-color: #004ec5;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 10px;
     transition: 0.5s;
 }
 .projeto3 a{
-    text-decoration: underline 2px #004ec5;
+    text-decoration: none;
     font-family: "Schibsted Grotesk Black";
-    color: #1e2633;
+    background-color: #004ec5;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 10px;
     transition: 0.5s;
 }
 .projeto1 a:hover{
     text-decoration: none;
-    scale: 1.4;
+    scale: 1.1;
     letter-spacing: 3px;
     transition: 0.5s;
-    color: #004ec5;
+    background-color: #003380;
 }
 .projeto2 a:hover{
     text-decoration: none;
-    scale: 1.4;
+    scale: 1.1;
     letter-spacing: 3px;
     transition: 0.5s;
-    color: #004ec5;
+    background-color: #003380;
 }
 .projeto3 a:hover{
     text-decoration: none;
-    scale: 1.4;
+    scale: 1.1;
     letter-spacing: 3px;
     transition: 0.5s;
-    color: #004ec5;
+    background-color: #003380;
+}
+
+.fotoProjeto{
+    width: 500px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid #0000003a;
+}
+
+@media screen and (max-width:1430px) {
+    .index-text h1{
+        font-size: 134px;
+        transition: 0.6s;
+        -webkit-box-reflect: below -90px linear-gradient(#ffffff00, #ffffff07, #ffffff1e);
+        text-align: center;
+    }
+    .index-text li{
+        font-size: 22px;
+        transition: 0.6s;
+    }
+}
+@media screen and (max-width:1100px) {
+    .index-text h1{
+        font-size: 124px;
+        transition: 0.6s;
+        -webkit-box-reflect: below -90px linear-gradient(#ffffff00, #ffffff07, #ffffff1e);
+        text-align: center;
+        margin: 50px 150px;
+    }
+    .index-text li{
+        font-size: 22px;
+        transition: 0.6s;
+    }
+}
+@media screen and (max-width:885px) {
+    .index-text h1{
+        font-size: 114px;
+        transition: 0.6s;
+        -webkit-box-reflect: below -40px linear-gradient(#ffffff00, #ffffff07, #ffffff1e);
+        margin: 50px 50px;
+    }
+    .index-text li{
+        font-size: 22px;
+        transition: 0.6s;
+    }
+}
+@media screen and (max-width:700px) {
+    .index-text h1{
+        font-size: 84px;
+        transition: 0.6s;
+        -webkit-box-reflect: below -30px linear-gradient(#ffffff00, #ffffff07, #ffffff1e);
+    }
+    .index-text h5{
+        font-family: "Schibsted Grotesk Medium";
+        font-size: 8px;
+        margin: 0px auto;
+    }
+    .index-text li{
+        font-size: 16px;
+        transition: 0.6s;
+        font-family: "Schibsted Grotesk SemiBold";
+    }
+}
+@media screen and (max-width:590px) {
+    .index-text h1{
+        font-size: 72px;
+        transition: 0.6s;
+        -webkit-box-reflect: below -30px linear-gradient(#ffffff00, #ffffff07, #ffffff1e);
+        text-align: center;
+    }
+    .fotoProjeto{
+        width: 210px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: 1px solid #0000003a;
+    }
+}
+@media screen and (max-width:550px) {
+    .index-text h1{
+        font-size: 64px;
+        transition: 0.6s;
+        -webkit-box-reflect: below -30px linear-gradient(#ffffff00, #ffffff07, #ffffff1e);
+        text-align: center;
+    }
+    .fotoProjeto{
+        width: 210px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: 1px solid #0000003a;
+    }
+}
+@media screen and (max-width:500px) {
+    .index-text h1{
+        font-size: 58px;
+        transition: 0.6s;
+        -webkit-box-reflect: below -30px linear-gradient(#ffffff00, #ffffff07, #ffffff1e);
+        text-align: center;
+        margin: 50px 10px;
+    }
+    .fotoProjeto{
+        width: 210px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: 1px solid #0000003a;
+    }
+}
+@media screen and (max-width:360px) {
+    .index-text h1{
+        font-size: 52px;
+        transition: 0.6s;
+        -webkit-box-reflect: below -30px linear-gradient(#ffffff00, #ffffff07, #ffffff1e);
+        text-align: center;
+        margin: 50px 10px;
+    }
+    .fotoProjeto{
+        width: 210px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: 1px solid #0000003a;
+    }
 }
