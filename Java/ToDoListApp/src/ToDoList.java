@@ -54,6 +54,8 @@ public class ToDoList extends JFrame {
         this.add(mainPanel);
         // Configuração de Listener para os Eventos
 
-        
+        this.setDefaultCloseOperation(2);
+        this.setBounds(500, 500, 300, 300);
+        this.setVisible(true);
     }
 }
