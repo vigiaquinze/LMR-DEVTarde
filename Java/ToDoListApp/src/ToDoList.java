@@ -60,6 +60,8 @@ public class ToDoList extends JFrame {
         taskList.addKeyListener(evt);
         Handler2 dbl = new Handler2();
         taskList.addMouseListener(dbl);
+        HandlerEnter enterAdd = new HandlerEnter();
+        taskInputField.addKeyListener(enterAdd);
 
         // Botão de concluir tarefa e o ActionListener dele
         markDoneButton = new JButton("Concluir");
@@ -140,6 +142,25 @@ public class ToDoList extends JFrame {
 
         @Override
         public void keyReleased(KeyEvent evt) {
+        }
+
+    }
+
+    public class HandlerEnter implements KeyListener {
+
+        @Override
+        public void keyTyped(KeyEvent enterAdd) {
+        }
+
+        @Override
+        public void keyPressed(KeyEvent enterAdd) {
+            if (enterAdd.getKeyCode() == KeyEvent.VK_ENTER) {
+                addTask();
+            }
+        }
+
+        @Override
+        public void keyReleased(KeyEvent enterAdd) {
         }
 
     }
