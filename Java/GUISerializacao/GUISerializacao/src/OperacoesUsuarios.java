@@ -19,7 +19,6 @@ public class OperacoesUsuarios {
         Usuario usuario = new Usuario(nome, idadeInt);
         usuarios.add(usuario);
         atualizarTabela();
-        
     }
 
     public void atualizarUsuario(int linhaSelecionada, String nome, String idade) {
@@ -48,7 +47,6 @@ public class OperacoesUsuarios {
     }
 
     private void atualizarTabela() {
-        tableModel.setRowCount(0);
         for (Usuario usuario : usuarios) {
             tableModel.addRow(new Object[] { usuario.getNome(), usuario.getIdade() });
         }

@@ -112,8 +112,6 @@ public class CadastroUsuarios extends JPanel {
     }
 
     private void atualizarTabela() {
-        tableModel.setRowCount(0);
-        
         for (Usuario usuario : usuarios) {
             tableModel.addRow(new Object[] { usuario.getNome(), usuario.getIdade() });
         }
