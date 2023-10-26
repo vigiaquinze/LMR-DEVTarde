@@ -1,31 +1,25 @@
-package Control;
+import java.util.List;
 
-import java.util.*;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
-import javax.swing.*;
-import javax.swing.table.*;
-
-import Model.Usuario;
-
-public class OperacoesUsuario {
-    // attribs
+public class OperacoesUsuarios {
     private List<Usuario> usuarios;
     private DefaultTableModel tableModel;
     private JTable table;
 
-    // ctor
-    public OperacoesUsuario(List<Usuario> usuarios, DefaultTableModel tableModel, JTable table) {
+    public OperacoesUsuarios(List<Usuario> usuarios, DefaultTableModel tableModel, JTable table) {
         this.usuarios = usuarios;
         this.tableModel = tableModel;
         this.table = table;
     }
 
-    // métodos do crud
     public void cadastrarUsuario(String nome, String idade) {
         int idadeInt = Integer.parseInt(idade);
         Usuario usuario = new Usuario(nome, idadeInt);
         usuarios.add(usuario);
         atualizarTabela();
+        
     }
 
     public void atualizarUsuario(int linhaSelecionada, String nome, String idade) {

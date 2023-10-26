@@ -1,17 +1,15 @@
-package Model;
+import java.io.Serializable;
 
-import java.io.*;
-
-public class Usuario implements Serializable{
-    //attr
+/**
+ * Usuario
+ */
+public class Usuario implements Serializable {
     private String nome;
     private int idade;
-    //constructors
     public Usuario(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
     }
-    //getters and setters
     public String getNome() {
         return nome;
     }
@@ -24,5 +22,7 @@ public class Usuario implements Serializable{
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    
     
 }
