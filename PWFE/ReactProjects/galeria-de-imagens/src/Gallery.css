@@ -1,0 +1,38 @@
+.image-container img {
+    width: 373px; /* Define o tamanho desejado para as imagens */
+    height: 300px;
+    object-fit: cover;
+    margin: 5px 5px 0px 5px;
+    padding: 0px 0px;
+    }
+.image-container {
+    background-color: #000;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+h1{
+    color:#000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+button{
+    border-radius: 8px;
+    background-color: #dadada;
+    color: #000000;
+    border: 1px solid #b8b8b8;
+    padding: 6px;
+    margin: 6px;
+}
+.carousel{
+    height: 500px;
+    object-fit: cover !important;
+    width: 50% !important;
+    margin: 0px auto;
+}
+.carousel-root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
