@@ -51,7 +51,7 @@ public class Carros {
     public String getPreco() {
         return preco;
     }
-    public void setPreco(String Preco) {
+    public void setPreco(String preco) {
         this.preco = preco;
     }
     
