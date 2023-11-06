@@ -44,7 +44,7 @@ public class CarrosControl {
     private void atualizarTabela() {
         tableModel.setRowCount(0);
         for (Carros carros : carro) {
-            tableModel.addRow(new Object[] { carros.getMarca(), carros.getModelo(), carros.getAno(), carros.getCor(), carros.getPlaca() });
+            tableModel.addRow(new Object[] { carros.getMarca(), carros.getModelo(), carros.getAno(), carros.getCor(), carros.getPlaca(), carros.getPreco() });
         }
     }
 }
