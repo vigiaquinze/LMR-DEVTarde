@@ -7,15 +7,15 @@ public class Carros {
     private String ano;
     private String cor;
     private String placa;
-    private String preco;
+    private String valor;
     //métodos
-    public Carros(String marca, String modelo, String ano, String cor, String placa, String preco) {
+    public Carros(String marca, String modelo, String ano, String cor, String placa, String valor) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
         this.cor = cor;
         this.placa = placa;
-        this.preco = preco;
+        this.valor = valor;
     }
     //getters and setters
     public String getMarca() {
@@ -48,11 +48,11 @@ public class Carros {
     public void setPlaca(String placa) {
         this.placa = placa;
     }
-    public String getPreco() {
-        return preco;
+    public String getValor() {
+        return valor;
     }
-    public void setPreco(String preco) {
-        this.preco = preco;
+    public void setValor(String valor) {
+        this.valor = valor;
     }
     
 }

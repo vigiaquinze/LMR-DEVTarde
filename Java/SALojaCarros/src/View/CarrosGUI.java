@@ -111,7 +111,7 @@ public class CarrosGUI extends JPanel{
         apagarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                operacoes.apagarCarro(linhaSelecionada);
+                operacoes.apagarCarro(inputPlaca.getText());
             }
         });
         //tabela de carros
