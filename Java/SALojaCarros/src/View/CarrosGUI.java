@@ -73,6 +73,9 @@ public class CarrosGUI extends JPanel{
         add(inputPanel, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
         //botões de eventos
+
+        CarrosControl operacoes = new CarrosControl(carro, tableModel, table);
+        
         table.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent evt) {
@@ -87,7 +90,6 @@ public class CarrosGUI extends JPanel{
                 }
             }
         });
-        CarrosControl operacoes = new CarrosControl(carro, tableModel, table);
 
         cadastrarButton.addActionListener(new ActionListener() {
             @Override

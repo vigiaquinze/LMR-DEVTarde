@@ -9,6 +9,8 @@ public class MainFrame extends JFrame {
     //adicionando abas do painel
     JTabbedPane abas = new JTabbedPane();
     abas.add("Carros", new CarrosGUI());
+    abas.add("Usuários", new UsuariosGUI());
+    abas.add("Vendas", new VendasGUI());
     add(abas);
    } 
    public void run() {

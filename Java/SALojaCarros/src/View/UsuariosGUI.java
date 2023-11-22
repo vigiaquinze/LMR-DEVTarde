@@ -1,0 +1,91 @@
+package View;
+
+import javax.swing.*;
+import java.util.*;
+import java.util.List;
+
+import javax.swing.table.*;
+
+import java.awt.event.*;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+
+import Control.UsuariosControl;
+import Model.Usuarios;
+
+public class UsuariosGUI extends JPanel{
+
+    //atributos (componentes)
+    private JTextField inputCpf;
+    private JTextField inputNome;
+    private DefaultTableModel tableModel;
+    private JTable table;
+    private List<Usuarios> usuario = new ArrayList<>();
+    private int linhaSelecionada = -1;
+    private JButton cadastrarButton, editarButton, apagarButton;
+    //construtor(GUI-JPanel)
+    public UsuariosGUI() {
+        //construindo a tabela
+        tableModel = new DefaultTableModel();
+        tableModel.addColumn("CPF");
+        tableModel.addColumn("Nome");
+        table = new JTable(tableModel);
+        JScrollPane scrollPane = new JScrollPane(table);
+        //criando os métodos de entrada de dados (input)
+        inputCpf = new JTextField(10);
+        inputNome = new JTextField(20);
+        cadastrarButton = new JButton("Cadastrar");
+        editarButton = new JButton("Editar");
+        apagarButton = new JButton("Apagar");
+        //adicionando os inputs
+        JPanel inputPanel = new JPanel();
+        inputPanel.add(new JLabel("CPF:"));
+        inputPanel.add(inputCpf);
+        inputPanel.add(new JLabel("Nome:"));
+        inputPanel.add(inputNome);
+        inputPanel.add(cadastrarButton);
+        inputPanel.add(editarButton);
+        inputPanel.add(apagarButton);
+        //setando layout
+        setLayout(new BorderLayout());
+        add(inputPanel, BorderLayout.NORTH);
+        add(scrollPane, BorderLayout.CENTER);
+        //botões de eventos
+        table.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent evt) {
+                linhaSelecionada = table.rowAtPoint(evt.getPoint());
+                if (linhaSelecionada != -1) {
+                    inputCpf.setText((String) table.getValueAt(linhaSelecionada, 0));
+                    inputNome.setText((String) table.getValueAt(linhaSelecionada, 1));
+                }
+            }
+        });
+        UsuariosControl operacoes = new UsuariosControl(usuario, tableModel, table);
+
+        cadastrarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                operacoes.cadastrarUsuario(inputCpf.getText(), inputNome.getText());
+                inputCpf.setText("");
+                inputNome.setText("");
+            }
+        });
+        editarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                operacoes.editarUsuario(linhaSelecionada, inputCpf.getText(), inputNome.getText());
+
+            }
+        });
+        apagarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                operacoes.apagarUsuario(inputCpf.getText());
+            }
+        });
+        //tabela de Usuarios
+    }
+}

@@ -1,5 +1,6 @@
 import Connection.ConnectionFactory;
 import Control.CarrosDAO;
+import Control.UsuariosDAO;
 
 import View.MainFrame;
 
