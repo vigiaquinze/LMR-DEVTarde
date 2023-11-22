@@ -13,6 +13,7 @@ import java.awt.event.*;
 import java.io.*;
 
 import Control.UsuariosControl;
+import Control.UsuariosDAO;
 import Model.Usuarios;
 
 public class UsuariosGUI extends JPanel{
@@ -22,7 +23,7 @@ public class UsuariosGUI extends JPanel{
     private JTextField inputNome;
     private DefaultTableModel tableModel;
     private JTable table;
-    private List<Usuarios> usuario = new ArrayList<>();
+    private List<Usuarios> usuarios = new ArrayList<>();
     private int linhaSelecionada = -1;
     private JButton cadastrarButton, editarButton, apagarButton;
     //construtor(GUI-JPanel)
@@ -48,6 +49,7 @@ public class UsuariosGUI extends JPanel{
         inputPanel.add(cadastrarButton);
         inputPanel.add(editarButton);
         inputPanel.add(apagarButton);
+        atualizarTabela();
         //setando layout
         setLayout(new BorderLayout());
         add(inputPanel, BorderLayout.NORTH);
@@ -63,7 +65,7 @@ public class UsuariosGUI extends JPanel{
                 }
             }
         });
-        UsuariosControl operacoes = new UsuariosControl(usuario, tableModel, table);
+        UsuariosControl operacoes = new UsuariosControl(usuarios, tableModel, table);
 
         cadastrarButton.addActionListener(new ActionListener() {
             @Override
@@ -87,5 +89,12 @@ public class UsuariosGUI extends JPanel{
             }
         });
         //tabela de Usuarios
+    }
+    private void atualizarTabela() {
+        usuarios = new UsuariosDAO().listarTodos();
+        tableModel.setRowCount(0);
+        for (Usuarios usuario : usuarios) {
+            tableModel.addRow(new Object[] { usuario.getNome(), usuario.getCpf() });
+        }
     }
 }

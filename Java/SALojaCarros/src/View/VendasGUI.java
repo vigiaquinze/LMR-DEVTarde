@@ -15,9 +15,6 @@ import java.io.*;
 import Control.CarrosControl;
 import Control.CarrosDAO;
 import Model.Carros;
-import Control.UsuariosControl;
-import Control.UsuariosDAO;
-import Model.Usuarios;
 
 public class VendasGUI extends JPanel {
 
@@ -63,4 +60,5 @@ public class VendasGUI extends JPanel {
         });
         // tabela de carros
     }
+
 }

@@ -50,6 +50,7 @@ public class UsuariosControl {
     }
 
     private void atualizarTabela() {
+        usuario = new UsuariosDAO().listarTodos();
         tableModel.setRowCount(0);
         for (Usuarios usuarios : usuario) {
             tableModel.addRow(new Object[] { usuarios.getNome(), usuarios.getCpf() });

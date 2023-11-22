@@ -13,6 +13,7 @@ import java.awt.event.*;
 import java.io.*;
 
 import Control.CarrosControl;
+import Control.CarrosDAO;
 import Model.Carros;
 
 public class CarrosGUI extends JPanel{
@@ -68,6 +69,7 @@ public class CarrosGUI extends JPanel{
         inputPanel.add(cadastrarButton);
         inputPanel.add(editarButton);
         inputPanel.add(apagarButton);
+        atualizarTabela();
         //setando layout
         setLayout(new BorderLayout());
         add(inputPanel, BorderLayout.NORTH);
@@ -117,5 +119,13 @@ public class CarrosGUI extends JPanel{
             }
         });
         //tabela de carros
+    }
+    private void atualizarTabela() {
+        carro = new CarrosDAO().listarTodos();
+        tableModel.setRowCount(0);
+        for (Carros carros : carro) {
+            tableModel.addRow(new Object[] { carros.getMarca(), carros.getModelo(), carros.getAno(), carros.getCor(),
+                    carros.getPlaca(), carros.getValor() });
+        }
     }
 }
