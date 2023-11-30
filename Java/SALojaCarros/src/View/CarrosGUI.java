@@ -16,9 +16,9 @@ import Control.CarrosControl;
 import Control.CarrosDAO;
 import Model.Carros;
 
-public class CarrosGUI extends JPanel{
+public class CarrosGUI extends JPanel {
 
-    //atributos (componentes)
+    // atributos (componentes)
     private JTextField inputPlaca;
     private JTextField inputModelo;
     private JTextField inputMarca;
@@ -30,7 +30,8 @@ public class CarrosGUI extends JPanel{
     private List<Carros> carro = new ArrayList<>();
     private int linhaSelecionada = -1;
     private JButton cadastrarButton, editarButton, apagarButton;
-    //construtor(GUI-JPanel)
+
+    // construtor(GUI-JPanel)
     public CarrosGUI() {
         //construindo a tabela
         tableModel = new DefaultTableModel();
@@ -93,6 +94,16 @@ public class CarrosGUI extends JPanel{
             }
         });
 
+        table.addFocusListener(new FocusAdapter() {
+    
+            public void focusGained(FocusEvent evt) {
+            atualizarTabela();
+               
+               
+           }
+        }
+        );
+
         cadastrarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -120,6 +131,7 @@ public class CarrosGUI extends JPanel{
         });
         //tabela de carros
     }
+
     private void atualizarTabela() {
         carro = new CarrosDAO().listarTodos();
         tableModel.setRowCount(0);

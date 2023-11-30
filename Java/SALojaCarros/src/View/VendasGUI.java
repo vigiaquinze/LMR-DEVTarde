@@ -11,6 +11,8 @@ import java.awt.event.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
+import java.sql.Connection;
+import java.sql.Statement;
 
 import Control.CarrosControl;
 import Control.CarrosDAO;
@@ -27,6 +29,9 @@ public class VendasGUI extends JPanel {
     private DefaultTableModel tableModel;
     private JTable table;
     private List<Carros> carro = new ArrayList<>();
+    private Connection connection;
+    private Statement stmt;
+    private List<Carros> carros;
 
     // construtor(GUI-JPanel)
     public VendasGUI() {
@@ -56,6 +61,9 @@ public class VendasGUI extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 operacoes.apagarCarro(inputPlaca.getText());
+                inputCPF.setText("");
+                inputPlaca.setText("");
+                inputPreco.setText("");
             }
         });
         // tabela de carros

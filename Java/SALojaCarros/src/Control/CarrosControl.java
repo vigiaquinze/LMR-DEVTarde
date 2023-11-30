@@ -41,7 +41,6 @@ public class CarrosControl {
 
     public void apagarCarro(String placa) {
         new CarrosDAO().apagar(placa);
-        atualizarTabela();
     }
 
     public void atualizar(String marca, String modelo, String ano, String cor, String placa, String valor) {
