@@ -73,6 +73,7 @@ public class UsuariosGUI extends JPanel{
                 operacoes.cadastrarUsuario(inputCpf.getText(), inputNome.getText());
                 inputCpf.setText("");
                 inputNome.setText("");
+                JOptionPane.showMessageDialog(getComponentPopupMenu(), "Cliente cadastrado.");
             }
         });
         editarButton.addActionListener(new ActionListener() {

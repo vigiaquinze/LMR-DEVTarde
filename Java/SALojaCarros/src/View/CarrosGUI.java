@@ -114,6 +114,7 @@ public class CarrosGUI extends JPanel {
                 inputCor.setText("");
                 inputAno.setText("");
                 inputPreco.setText("");
+                JOptionPane.showMessageDialog(getComponentPopupMenu(), "Carro cadastrado.");
             }
         });
         editarButton.addActionListener(new ActionListener() {

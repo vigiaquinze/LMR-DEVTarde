@@ -64,6 +64,7 @@ public class VendasGUI extends JPanel {
                 inputCPF.setText("");
                 inputPlaca.setText("");
                 inputPreco.setText("");
+                JOptionPane.showMessageDialog(getComponentPopupMenu(), "Carro vendido.");
             }
         });
         // tabela de carros
