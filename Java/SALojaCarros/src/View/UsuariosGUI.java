@@ -80,13 +80,14 @@ public class UsuariosGUI extends JPanel{
             @Override
             public void actionPerformed(ActionEvent e) {
                 operacoes.editarUsuario(linhaSelecionada, inputCpf.getText(), inputNome.getText());
-
+                JOptionPane.showMessageDialog(getComponentPopupMenu(), "Cliente editado.");
             }
         });
         apagarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 operacoes.apagarUsuario(inputCpf.getText());
+                JOptionPane.showMessageDialog(getComponentPopupMenu(), "Cliente removido.");
             }
         });
         //tabela de Usuarios

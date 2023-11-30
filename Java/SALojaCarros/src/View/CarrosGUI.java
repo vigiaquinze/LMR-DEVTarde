@@ -95,11 +95,8 @@ public class CarrosGUI extends JPanel {
         });
 
         table.addFocusListener(new FocusAdapter() {
-    
             public void focusGained(FocusEvent evt) {
             atualizarTabela();
-               
-               
            }
         }
         );
@@ -121,13 +118,14 @@ public class CarrosGUI extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 operacoes.editarCarro(linhaSelecionada, inputPlaca.getText(), inputModelo.getText(), inputMarca.getText(), inputCor.getText(), inputAno.getText(), inputPreco.getText());
-
+                JOptionPane.showMessageDialog(getComponentPopupMenu(), "Carro editado.");
             }
         });
         apagarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 operacoes.apagarCarro(inputPlaca.getText());
+                JOptionPane.showMessageDialog(getComponentPopupMenu(), "Carro deletado.");
             }
         });
         //tabela de carros
